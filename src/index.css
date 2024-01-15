@@ -1,32 +1,21 @@
 /********** Template CSS **********/
 :root {
-    --primary: #1363C6;
+    --themeColor: #1363C6;
     --secondary: #15ACE1;
     --light: #F4F7FE;
     --dark: #14183E;
 }
 
-
-/*** Spinner ***/
-#spinner {
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity .5s ease-out, visibility 0s linear .5s;
-    z-index: 99999;
+.bg-themeColor {
+    background-color: var(--themeColor) !important;
 }
 
-#spinner.show {
-    transition: opacity .5s ease-out, visibility 0s linear 0s;
-    visibility: visible;
-    opacity: 1;
+.text-themeColor {
+    color: var(--themeColor) !important;
 }
 
-.back-to-top {
-    position: fixed;
-    display: none;
-    right: 45px;
-    bottom: 45px;
-    z-index: 99;
+a {
+    text-decoration: none !important;
 }
 
 
@@ -95,6 +84,9 @@ h6,
     padding: 0;
     color: rgba(255, 255, 255, .7);
     outline: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 .navbar .navbar-nav .nav-link:hover,
@@ -102,19 +94,10 @@ h6,
     color: rgba(255, 255, 255, 1);
 }
 
-.navbar .dropdown-toggle::after {
-    border: none;
-    content: "\f107";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    vertical-align: middle;
-    margin-left: 8px;
-}
-
 @media (max-width: 991.98px) {
     .navbar .navbar-nav {
         padding: 0 15px;
-        background: var(--primary);
+        background: var(--themeColor);
     }
 
     .navbar .navbar-nav .nav-link {
@@ -230,16 +213,17 @@ h6,
 }
 
 .service-item:hover {
-    background: var(--primary);
+    background: var(--themeColor);
 }
 
 .service-item .service-icon {
     margin: 0 auto 20px auto;
     width: 90px;
     height: 90px;
-    color: var(--primary);
+    color: var(--themeColor);
     background: var(--light);
     transition: .5s;
+    font-size: 2rem;
 }
 
 .service-item:hover .service-icon {
@@ -259,13 +243,13 @@ h6,
 .service-item a.btn {
     position: relative;
     display: flex;
-    color: var(--primary);
+    color: var(--themeColor);
     transition: .5s;
     z-index: 1;
 }
 
 .service-item:hover a.btn {
-    color: var(--primary);
+    color: var(--themeColor);
 }
 
 .service-item a.btn::before {
@@ -357,7 +341,7 @@ h6,
 }
 
 .case-overlay span.btn:hover {
-    color: var(--primary);
+    color: var(--themeColor);
     background: #FFFFFF;
     border-color: #FFFFFF;
 }
@@ -376,7 +360,7 @@ h6,
 
 .accordion .accordion-button:not(.collapsed) {
     color: #FFFFFF;
-    background: var(--primary);
+    background: var(--themeColor);
     box-shadow: none;
 }
 
@@ -388,68 +372,6 @@ h6,
     padding: 15px 0 0 0;
 }
 
-
-/*** Testimonial ***/
-.testimonial-carousel {
-    position: relative;
-}
-
-.testimonial-carousel .owl-nav {
-    position: absolute;
-    width: 40px;
-    height: 100%;
-    top: calc(50% - 50px);
-    left: -21px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.testimonial-carousel .owl-nav .owl-prev,
-.testimonial-carousel .owl-nav .owl-next {
-    margin: 5px 0;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--primary);
-    background: #FFFFFF;
-    border: 1px solid var(--primary);
-    border-radius: 40px;
-    font-size: 18px;
-    transition: .5s;
-}
-
-.testimonial-carousel .owl-nav .owl-prev:hover,
-.testimonial-carousel .owl-nav .owl-next:hover {
-    background: var(--primary);
-    color: #FFFFFF;
-}
-
-.testimonial-carousel .owl-dots {
-    margin-top: 35px;
-    margin-left: 3rem;
-}
-
-.testimonial-carousel .owl-dot {
-    position: relative;
-    display: inline-block;
-    margin-right: 10px;
-    width: 15px;
-    height: 15px;
-    background: #FFFFFF;
-    border: 1px solid var(--primary);
-    border-radius: 15px;
-    transition: .5s;
-}
-
-.testimonial-carousel .owl-dot.active {
-    width: 30px;
-    background: var(--primary);
-}
-
-
 /*** Team ***/
 .team-item {
     transition: .5s;
@@ -459,7 +381,7 @@ h6,
 
 .team-item:hover {
 
-    border-color: var(--primary);
+    border-color: var(--themeColor);
 }
 
 
@@ -483,11 +405,13 @@ h6,
 }
 
 .footer .btn.btn-social:hover {
-    color: var(--primary);
+    color: var(--themeColor);
 }
 
 .footer .btn.btn-link {
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: 10px;
     margin-bottom: 10px;
     padding: 0;
     text-align: left;
@@ -498,14 +422,6 @@ h6,
 
 .footer .btn.btn-link:hover {
     color: #FFFFFF;
-}
-
-.footer .btn.btn-link::before {
-    position: relative;
-    content: "\f105";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    margin-right: 10px;
 }
 
 .footer .btn.btn-link:hover {
