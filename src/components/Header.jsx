@@ -1,17 +1,44 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { useEffect, useRef, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import './Header.css'
 
 function Header() {
+    const [sidebar, setSideBar] = useState(false);
+    const [service, setService] = useState(false);
+    const sidebarRef = useRef();
+
+    const handleOutSideClick = (e) => {
+        if (sidebarRef.current && !sidebarRef.current.contains(e.target)) {
+            setSideBar(false);
+        }
+    }
+
+    // const handleSidebarScroll = () => {
+    //     setSideBar(false);
+    // }
+
+
+    useEffect(() => {
+        document.addEventListener('mousedown', handleOutSideClick);
+        // window.addEventListener('scroll', handleSidebarScroll);
+        return () => {
+            document.addEventListener('mousedown', handleOutSideClick);
+            // window.addEventListener('scroll', handleSidebarScroll);
+        }
+    }, []);
+
+
+
     return (
         <>
-
-
             {/* <!-- Navbar Start --> */}
             <div className="container-fluid">
                 <div className="container">
-                    <nav className="navbar navbar-expand-lg navbar-dark p-0">
+                    <nav className="navbar navbar-expand-lg navbar-dark p-0 py-5">
                         <Link to="/" className="navbar-brand">
-                            <h1 className="text-white">AI<span className="text-dark">.</span>Tech</h1>
+                            {/* <h1 className="text-white">AI<span className="text-dark">.</span>Tech</h1> */}
+                            <img style={{ height: '50px', width: '150px' }} src="Life Link Digital White Small.png" alt="Life Link Digital" />
                         </Link>
                         <button type="button" className="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
                             data-bs-target="#navbarCollapse">
@@ -19,28 +46,107 @@ function Header() {
                         </button>
                         <div className="collapse navbar-collapse" id="navbarCollapse">
                             <div className="navbar-nav ms-auto">
-                                <NavLink to="/" className="nav-item nav-link">Home</NavLink>
-                                <NavLink to="/about" className="nav-item nav-link">About</NavLink>
-                                <NavLink to="/services" className="nav-item nav-link">Services</NavLink>
-                                <NavLink to="/features" className="nav-item nav-link">Features</NavLink>
-                                <NavLink to="/contact" className="nav-item nav-link">Contact</NavLink>
-                                {/* <div className="nav-item dropdown">
-                                    <Link to="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                                        Pages
-                                    </Link>
-                                    <div className="dropdown-menu bg-light mt-2">
-                                        <Link to="/feature" className="dropdown-item">Features</Link>
-                                        <Link to="/team" className="dropdown-item">Our Team</Link>
-                                        <Link to="/faq" className="dropdown-item">FAQs</Link>
-                                        <Link to="/testimonial" className="dropdown-item">Testimonial</Link>
-                                        <Link to="/404" className="dropdown-item">404 Page</Link>
+                                {sidebar ? '' : (
+                                    <div onClick={() => setSideBar(!sidebar)} className="toggleSidebar btn btn-primary cursor-pointer">
+                                        <svg width="24" height="24" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill="#fff" fillRule="evenodd" d="M2 1L1 2v12l1 1h12l1-1V2l-1-1zm0 13V2h7v12z" clipRule="evenodd" />
+                                        </svg>
                                     </div>
-                                </div> */}
+                                )}
                             </div>
                             <button type="button" className="btn text-white p-0 d-none d-lg-block" data-bs-toggle="modal"
                                 data-bs-target="#searchModal"><i className="fa fa-search"></i></button>
                         </div>
                     </nav>
+                </div>
+                <div className={`sidebar bg-success px-4 py-3 d-none d-lg-block`} style={sidebar ? { 'transform': 'translate(0, 0)' } : {}} ref={sidebarRef}>
+                    <div className="sidebar_top ms-auto ">
+                        <div onClick={() => setSideBar(false)} className="cross_icon cursor-pointer btn btn-light cursor-pointer ">
+                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#fff" d="M10.5 17a1 1 0 0 1-.71-.29a1 1 0 0 1 0-1.42L13.1 12L9.92 8.69a1 1 0 0 1 0-1.41a1 1 0 0 1 1.42 0l3.86 4a1 1 0 0 1 0 1.4l-4 4a1 1 0 0 1-.7.32" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div className="sidebar_bottom">
+                        <div className="nav_links">
+                            <NavLink to="/" className="nav-item nav-link">Home</NavLink>
+                        </div>
+                        <div className="nav_links">
+                            <NavLink to="/about" className="nav-item nav-link">About</NavLink>
+                        </div>
+                        <div onClick={() => setService(!service)} className="nav_links">
+                            <NavLink to="#" className="nav-item nav-link">Services</NavLink>
+                            {service ? (
+                                <div className="arrowIconDown">
+                                    <svg width="24" height="24" viewBox="0 0 16 7" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill="#fff" d="M8 6.5a.47.47 0 0 1-.35-.15l-4.5-4.5c-.2-.2-.2-.51 0-.71c.2-.2.51-.2.71 0l4.15 4.15l4.14-4.14c.2-.2.51-.2.71 0c.2.2.2.51 0 .71l-4.5 4.5c-.1.1-.23.15-.35.15Z" />
+                                    </svg>
+                                </div>
+                            ) : (
+                                <div className="arrowIconRight">
+                                    <svg width="24" height="24" viewBox="0 0 7 16" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill="#fff" d="M1.5 13a.47.47 0 0 1-.35-.15c-.2-.2-.2-.51 0-.71L5.3 7.99L1.15 3.85c-.2-.2-.2-.51 0-.71c.2-.2.51-.2.71 0l4.49 4.51c.2.2.2.51 0 .71l-4.5 4.49c-.1.1-.23.15-.35.15" />
+                                    </svg>
+                                </div>
+                            )}
+                            {/* <div className="arrowIconDown">
+                                <svg width="24" height="24" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="none" stroke="#000" strokeLinecap="round" strokeLinejoin="round" strokeWidth="4" d="M36 18L24 30L12 18" />
+                                </svg>
+                            </div> */}
+                            {/* <div className="arrowIconRight">
+                                <svg width="24" height="24" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="none" stroke="#000000" strokeLinecap="round" strokeLinejoin="round" strokeWidth="4" d="m19 12l12 12l-12 12" />
+                                </svg>
+                            </div> */}
+                        </div>
+                        {service ? (
+                            <div className='service_container' >
+                                <div className="service_links">
+                                    <NavLink to="/services" className="nav-item nav-link">Software Developement</NavLink>
+                                </div>
+                                <div className="service_links">
+                                    <NavLink to="/services" className="nav-item nav-link">Website Developement</NavLink>
+                                </div>
+                                <div className="service_links">
+                                    <NavLink to="/services" className="nav-item nav-link">SME Guidence</NavLink>
+                                </div>
+                                <div className="service_links">
+                                    <NavLink to="/services" className="nav-item nav-link">Pharma Digitization</NavLink>
+                                </div>
+                                <div className="service_links">
+                                    <NavLink to="/services" className="nav-item nav-link">Pharma Digitization</NavLink>
+                                </div>
+                                <div className="service_links">
+                                    <NavLink to="/services" className="nav-item nav-link">HealthCare Digitization</NavLink>
+                                </div>
+                                <div className="service_links">
+                                    <NavLink to="/services" className="nav-item nav-link">Hospital Management</NavLink>
+                                </div>
+                                <div className="service_links">
+                                    <NavLink to="/services" className="nav-item nav-link">School/College Management</NavLink>
+                                </div>
+                                <div className="service_links">
+                                    <NavLink to="/services" className="nav-item nav-link">Computer Validation...</NavLink>
+                                </div>
+                                <div className="service_links">
+                                    <NavLink to="/services" className="nav-item nav-link">Quality Risk Management</NavLink>
+                                </div>
+                                <div className="service_links">
+                                    <NavLink to="/services" className="nav-item nav-link">SDLC Management</NavLink>
+                                </div>
+                                <div className="service_links">
+                                    <NavLink to="/services" className="nav-item nav-link">GXP Audit ...</NavLink>
+                                </div>
+                            </div>
+                        ) : ''}
+                        <div className="nav_links">
+                            <NavLink to="/features" className="nav-item nav-link">Features</NavLink>
+                        </div>
+                        <div className="nav_links">
+                            <NavLink to="/contact" className="nav-item nav-link">Contacts</NavLink>
+                        </div>
+                    </div>
                 </div>
             </div>
             {/* <!-- Navbar End --> */}

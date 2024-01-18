@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import './Home.css';
 
 function Home() {
     return (
@@ -460,19 +461,22 @@ function Home() {
                                 clita duo justo et tempor eirmod magna dolore erat amet</p>
                             <a className="btn btn-primary rounded-pill px-4" href="">Read More</a>
                         </div>
-                        <div className="col-lg-7 wow fadeIn" style={{ 'height': '200px', 'overflow': 'hidden' }}>
+                        <div className="col-lg-7 wow fadeIn" >
                             <Swiper
-                                direction={'vertical'}
+                                direction={'horizontal'}
                                 navigation={{
                                     clickable: true,
+                                    // nextEl: '.swiper-button-next',
+                                    // prevEl: '.swiper-button-prev',
                                 }}
                                 modules={[Navigation]}
+                                // style={{  }}
                             >
-                                <SwiperSlide>
-                                    <div className="testimonial-item ps-5">
+                                <SwiperSlide >
+                                    <div className="testimonial-item px-5">
                                         <i className="fa fa-quote-left fa-2x text-themeColor mb-3"></i>
                                         <p className="fs-4">Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat amet</p>
-                                        <div className="d-flex align-items-center">
+                                        <div className="d-flex align-items-center justify-content-center">
                                             <img className="img-fluid flex-shrink-0 rounded-circle" src="/testimonial-1.jpg"
                                                 style={{ 'width': '60px', 'height': '60px' }} />
                                             <div className="ps-3">
@@ -483,10 +487,10 @@ function Home() {
                                     </div>
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <div className="testimonial-item ps-5">
+                                    <div className="testimonial-item px-5">
                                         <i className="fa fa-quote-left fa-2x text-themeColor mb-3"></i>
                                         <p className="fs-4">Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat amet</p>
-                                        <div className="d-flex align-items-center">
+                                        <div className="d-flex align-items-center justify-content-center">
                                             <img className="img-fluid flex-shrink-0 rounded-circle" src="/testimonial-2.jpg"
                                                 style={{ 'width': '60px', 'height': '60px' }} />
                                             <div className="ps-3">
@@ -497,10 +501,10 @@ function Home() {
                                     </div>
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <div className="testimonial-item ps-5">
+                                    <div className="testimonial-item px-5 ">
                                         <i className="fa fa-quote-left fa-2x text-themeColor mb-3"></i>
                                         <p className="fs-4">Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat amet</p>
-                                        <div className="d-flex align-items-center">
+                                        <div className="d-flex align-items-center justify-content-center">
                                             <img className="img-fluid flex-shrink-0 rounded-circle" src="/testimonial-3.jpg"
                                                 style={{ 'width': '60px', 'height': '60px' }} />
                                             <div className="ps-3">
