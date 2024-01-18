@@ -10,7 +10,7 @@ function Services() {
             <BreadCrumb page="Services" />
 
             {/* <!-- Service Start --> */}
-            <div className="container-fluid bg-light mt-5 py-5">
+            <div className="container-fluid bg-light py-5">
                 <div className="container py-5">
                     <div className="row g-5 align-items-center">
                         <div className="col-lg-5 wow fadeIn" data-wow-delay="0.1s">

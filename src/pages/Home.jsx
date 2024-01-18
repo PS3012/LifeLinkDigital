@@ -2,6 +2,10 @@ import { faFacebookF, faInstagram, faLinkedinIn, faTwitter } from "@fortawesome/
 import { faArrowRight, faBrain, faCheck, faGraduationCap, faPowerOff, faRobot, faUsers } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { Accordion } from "react-bootstrap"
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
 
 function Home() {
     return (
@@ -211,7 +215,7 @@ function Home() {
             {/* <!-- Case Start --> */}
             <div className="container-fluid bg-light py-5">
                 <div className="container py-5">
-                    <div className="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style={{ 'max-width': '500px' }}>
+                    <div className="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style={{ 'maxWidth': '500px' }}>
                         <div className="btn btn-sm border rounded-pill text-primary px-3 mb-3">Case Study</div>
                         <h1 className="mb-4">Explore Our Recent AI Case Studies</h1>
                     </div>
@@ -264,13 +268,13 @@ function Home() {
             {/* <!-- FAQs Start --> */}
             <div className="container-fluid py-5">
                 <div className="container py-5">
-                    <div className="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style={{ 'max-width': '500px' }}>
+                    <div className="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style={{ 'maxWidth': '500px' }}>
                         <div className="btn btn-sm border rounded-pill text-primary px-3 mb-3">Popular FAQs</div>
                         <h1 className="mb-4">Frequently Asked Questions</h1>
                     </div>
                     <div className="row">
                         <div className="col-lg-6">
-                            <Accordion defaultActiveKey="0">
+                            <Accordion>
                                 <Accordion.Item eventKey="0">
                                     <Accordion.Header>How to build a website?</Accordion.Header>
                                     <Accordion.Body>
@@ -298,7 +302,7 @@ function Home() {
                             </Accordion>
                         </div>
                         <div className="col-lg-6">
-                            <Accordion defaultActiveKey="1">
+                            <Accordion>
                                 <Accordion.Item eventKey="0">
                                     <Accordion.Header>Will you maintain my site for me?</Accordion.Header>
                                     <Accordion.Body>
@@ -443,6 +447,75 @@ function Home() {
                 </div>
             </div>
             {/* <!-- Team End --> */}
+
+            {/* <!-- Testimonial Start --> */}
+            <div className="container-xxl py-5">
+                <div className="container py-5">
+                    <div className="row g-5">
+                        <div className="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
+                            <div className="btn btn-sm border rounded-pill text-themeColor px-3 mb-3">Testimonial</div>
+                            <h1 className="mb-4">What Say Our Clients!</h1>
+                            <p className="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam
+                                amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus
+                                clita duo justo et tempor eirmod magna dolore erat amet</p>
+                            <a className="btn btn-primary rounded-pill px-4" href="">Read More</a>
+                        </div>
+                        <div className="col-lg-7 wow fadeIn" style={{ 'height': '200px', 'overflow': 'hidden' }}>
+                            <Swiper
+                                direction={'vertical'}
+                                navigation={{
+                                    clickable: true,
+                                }}
+                                modules={[Navigation]}
+                            >
+                                <SwiperSlide>
+                                    <div className="testimonial-item ps-5">
+                                        <i className="fa fa-quote-left fa-2x text-themeColor mb-3"></i>
+                                        <p className="fs-4">Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat amet</p>
+                                        <div className="d-flex align-items-center">
+                                            <img className="img-fluid flex-shrink-0 rounded-circle" src="/testimonial-1.jpg"
+                                                style={{ 'width': '60px', 'height': '60px' }} />
+                                            <div className="ps-3">
+                                                <h5 className="mb-1">Client Name</h5>
+                                                <span>Profession</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className="testimonial-item ps-5">
+                                        <i className="fa fa-quote-left fa-2x text-themeColor mb-3"></i>
+                                        <p className="fs-4">Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat amet</p>
+                                        <div className="d-flex align-items-center">
+                                            <img className="img-fluid flex-shrink-0 rounded-circle" src="/testimonial-2.jpg"
+                                                style={{ 'width': '60px', 'height': '60px' }} />
+                                            <div className="ps-3">
+                                                <h5 className="mb-1">Client Name</h5>
+                                                <span>Profession</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className="testimonial-item ps-5">
+                                        <i className="fa fa-quote-left fa-2x text-themeColor mb-3"></i>
+                                        <p className="fs-4">Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat amet</p>
+                                        <div className="d-flex align-items-center">
+                                            <img className="img-fluid flex-shrink-0 rounded-circle" src="/testimonial-3.jpg"
+                                                style={{ 'width': '60px', 'height': '60px' }} />
+                                            <div className="ps-3">
+                                                <h5 className="mb-1">Client Name</h5>
+                                                <span>Profession</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+                            </Swiper>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {/* <!-- Testimonial End --> */}
 
         </>
     )

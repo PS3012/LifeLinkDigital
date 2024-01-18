@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 function Header() {
     return (
@@ -19,9 +19,11 @@ function Header() {
                         </button>
                         <div className="collapse navbar-collapse" id="navbarCollapse">
                             <div className="navbar-nav ms-auto">
-                                <Link to="/" className="nav-item nav-link active">Home</Link>
-                                <Link to="/about" className="nav-item nav-link">About</Link>
-                                <Link to="/services" className="nav-item nav-link">Services</Link>
+                                <NavLink to="/" className="nav-item nav-link">Home</NavLink>
+                                <NavLink to="/about" className="nav-item nav-link">About</NavLink>
+                                <NavLink to="/services" className="nav-item nav-link">Services</NavLink>
+                                <NavLink to="/features" className="nav-item nav-link">Features</NavLink>
+                                <NavLink to="/contact" className="nav-item nav-link">Contact</NavLink>
                                 {/* <div className="nav-item dropdown">
                                     <Link to="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                                         Pages
@@ -34,7 +36,6 @@ function Header() {
                                         <Link to="/404" className="dropdown-item">404 Page</Link>
                                     </div>
                                 </div> */}
-                                <Link to="/contact" className="nav-item nav-link">Contact</Link>
                             </div>
                             <button type="button" className="btn text-white p-0 d-none d-lg-block" data-bs-toggle="modal"
                                 data-bs-target="#searchModal"><i className="fa fa-search"></i></button>
