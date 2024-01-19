@@ -1,12 +1,12 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { useEffect, useRef, useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
 import './Header.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link, NavLink } from 'react-router-dom';
+import { useEffect, useRef, useState } from 'react';
 
 function Header() {
-    const [sidebar, setSideBar] = useState(false);
-    const [service, setService] = useState(false);
     const sidebarRef = useRef();
+    const [service, setService] = useState(false);
+    const [sidebar, setSideBar] = useState(false);
 
     const handleOutSideClick = (e) => {
         if (sidebarRef.current && !sidebarRef.current.contains(e.target)) {
@@ -27,7 +27,6 @@ function Header() {
             // window.addEventListener('scroll', handleSidebarScroll);
         }
     }, []);
-
 
 
     return (
@@ -59,11 +58,11 @@ function Header() {
                         </div>
                     </nav>
                 </div>
-                <div className={`sidebar bg-success px-4 py-3 d-none d-lg-block`} style={sidebar ? { 'transform': 'translate(0, 0)' } : {}} ref={sidebarRef}>
+                <div className={`sidebar  px-4 py-3 d-none d-lg-block`} style={sidebar ? { 'transform': 'translate(0, 0)' } : {}} ref={sidebarRef}>
                     <div className="sidebar_top ms-auto ">
-                        <div onClick={() => setSideBar(false)} className="cross_icon cursor-pointer btn btn-light cursor-pointer ">
-                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="#fff" d="M10.5 17a1 1 0 0 1-.71-.29a1 1 0 0 1 0-1.42L13.1 12L9.92 8.69a1 1 0 0 1 0-1.41a1 1 0 0 1 1.42 0l3.86 4a1 1 0 0 1 0 1.4l-4 4a1 1 0 0 1-.7.32" />
+                        <div onClick={() => setSideBar(false)} className="cross_icon cursor-pointer btn btn-light cursor-pointer  ">
+                            <svg width="24" height="24" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#fff" fillRule="evenodd" d="M14.5 3.75a.75.75 0 0 1 1.5 0v8.5a.75.75 0 0 1-1.5 0zm-6.341.47a.75.75 0 0 0 0 1.06l1.97 1.97H.75a.75.75 0 0 0 0 1.5h9.379l-1.97 1.97a.75.75 0 1 0 1.06 1.06l3.25-3.25L13 8l-.53-.53l-3.25-3.25a.75.75 0 0 0-1.061 0" clipRule="evenodd" />
                             </svg>
                         </div>
                     </div>
@@ -89,30 +88,17 @@ function Header() {
                                     </svg>
                                 </div>
                             )}
-                            {/* <div className="arrowIconDown">
-                                <svg width="24" height="24" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill="none" stroke="#000" strokeLinecap="round" strokeLinejoin="round" strokeWidth="4" d="M36 18L24 30L12 18" />
-                                </svg>
-                            </div> */}
-                            {/* <div className="arrowIconRight">
-                                <svg width="24" height="24" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill="none" stroke="#000000" strokeLinecap="round" strokeLinejoin="round" strokeWidth="4" d="m19 12l12 12l-12 12" />
-                                </svg>
-                            </div> */}
                         </div>
                         {service ? (
                             <div className='service_container' >
                                 <div className="service_links">
-                                    <NavLink to="/services" className="nav-item nav-link">Software Developement</NavLink>
+                                    <NavLink to="/software-development" className="nav-item nav-link">Software Developement</NavLink>
                                 </div>
                                 <div className="service_links">
                                     <NavLink to="/services" className="nav-item nav-link">Website Developement</NavLink>
                                 </div>
                                 <div className="service_links">
                                     <NavLink to="/services" className="nav-item nav-link">SME Guidence</NavLink>
-                                </div>
-                                <div className="service_links">
-                                    <NavLink to="/services" className="nav-item nav-link">Pharma Digitization</NavLink>
                                 </div>
                                 <div className="service_links">
                                     <NavLink to="/services" className="nav-item nav-link">Pharma Digitization</NavLink>

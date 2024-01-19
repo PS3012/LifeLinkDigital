@@ -1,7 +1,7 @@
+import { Link } from "react-router-dom"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faFacebookF, faInstagram, faLinkedinIn, faTwitter } from "@fortawesome/free-brands-svg-icons"
 import { faAngleRight, faEnvelopeOpenText, faPhone, faSignsPost } from "@fortawesome/free-solid-svg-icons"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { Link } from "react-router-dom"
 
 function Footer() {
     return (
@@ -36,11 +36,9 @@ function Footer() {
                     <div className="row g-5">
                         <div className="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
                             <a href="index.html" className="d-inline-block mb-3">
-                                <h1 className="text-white">AI<span className="text-primary">.</span>Tech</h1>
+                                <h1 className="text-white">LifeLink<span className="text-primary"></span>Digital</h1>
                             </a>
-                            <p className="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam
-                                amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus
-                                clita duo justo et tempor</p>
+                            <p className="mb-0">Empowering Your Business with Intelligent Solutions: Harness the Power of Artificial Intelligence to Optimize, Innovate, and Excel in the Digital Era.</p>
                         </div>
                         <div className="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
                             <h5 className="text-white mb-4">Get In Touch</h5>
@@ -54,7 +52,7 @@ function Footer() {
                             </p>
                             <p>
                                 <FontAwesomeIcon icon={faEnvelopeOpenText} className="me-3" />
-                                info@example.com
+                                info@lifelinkdigital.com
                             </p>
                             <div className="d-flex pt-2">
                                 <a className="btn btn-outline-light btn-social" href="">

@@ -1,5 +1,5 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import BreadCrumb from "../components/BreadCrumb"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBrain, faGraduationCap, faPowerOff, faRobot } from "@fortawesome/free-solid-svg-icons"
 
 

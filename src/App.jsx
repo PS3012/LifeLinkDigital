@@ -1,12 +1,13 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom"
-import Header from "./components/Header"
 import Home from "./pages/Home"
-import Footer from "./components/Footer"
 import About from "./pages/About"
 import Contact from "./pages/Contact"
-import PageNotFound from "./pages/PageNotFound"
-import Services from "./pages/Services"
 import Feature from "./pages/Feature"
+import Services from "./pages/Services"
+import Header from "./components/Header"
+import Footer from "./components/Footer"
+import PageNotFound from "./pages/PageNotFound"
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import SoftwareDevelopement from "./pages/SoftwareDevelopement"
 
 function App() {
   return (
@@ -17,10 +18,11 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/features" element={<Feature />} />
           <Route path="/*" element={<PageNotFound />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/features" element={<Feature />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/software-development" element={<SoftwareDevelopement />} />
         </Routes>
         <Footer />
       </BrowserRouter>

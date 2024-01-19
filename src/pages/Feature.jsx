@@ -1,6 +1,6 @@
-import { faCheck, faUsers } from "@fortawesome/free-solid-svg-icons"
 import BreadCrumb from "../components/BreadCrumb"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faCheck, faUsers } from "@fortawesome/free-solid-svg-icons"
 
 function Feature() {
     return (

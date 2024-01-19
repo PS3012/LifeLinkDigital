@@ -1,12 +1,12 @@
-import { faFacebookF, faInstagram, faLinkedinIn, faTwitter } from "@fortawesome/free-brands-svg-icons"
-import { faArrowRight, faBrain, faCheck, faGraduationCap, faPowerOff, faRobot, faUsers } from "@fortawesome/free-solid-svg-icons"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import 'swiper/css';
+import './Home.css';
+import 'swiper/css/navigation';
+import { Navigation } from 'swiper/modules';
 import { Accordion } from "react-bootstrap"
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import './Home.css';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faFacebookF, faInstagram, faLinkedinIn, faTwitter } from "@fortawesome/free-brands-svg-icons"
+import { faArrowRight, faBrain, faCheck, faGraduationCap, faPowerOff, faRobot, faUsers } from "@fortawesome/free-solid-svg-icons"
 
 function Home() {
     return (
@@ -17,10 +17,9 @@ function Home() {
                 <div className="container pt-5">
                     <div className="row g-5 pt-5">
                         <div className="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
-                            <div className="btn btn-sm border rounded-pill text-white px-3 mb-3 animated slideInRight">AI.Tech</div>
+                            <div className="btn btn-sm border rounded-pill text-white px-3 mb-3 animated slideInRight">Life Link Digital</div>
                             <h1 className="display-4 text-white mb-4 animated slideInRight">Artificial Intelligence for Your Business</h1>
-                            <p className="text-white mb-4 animated slideInRight">Tempor rebum no at dolore lorem clita rebum rebum ipsum
-                                rebum stet dolor sed justo kasd. Ut dolor sed magna dolor sea diam. Sit diam sit</p>
+                            <p className="text-white mb-4 animated slideInRight">Empowering Your Business with Intelligent Solutions: Harness the Power of Artificial Intelligence to Optimize, Innovate, and Excel in the Digital Era.</p>
                             <a href="" className="btn btn-light py-sm-3 px-sm-5 rounded-pill me-3 animated slideInRight">Read More</a>
                             <a href="" className="btn btn-outline-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">Contact Us</a>
                         </div>
@@ -45,11 +44,8 @@ function Home() {
                         <div className="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                             <div className="btn btn-sm border rounded-pill text-primary px-3 mb-3">About Us</div>
                             <h1 className="mb-4">We Make Your Business Smarter with Artificial Intelligence</h1>
-                            <p className="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam
-                                amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus
-                                clita duo justo et tempor eirmod magna dolore erat amet</p>
-                            <p className="mb-4">Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no
-                                labore lorem sit. Sanctus clita duo justo et tempor.</p>
+                            <p className="mb-4">Transforming Possibilities into Reality: At Life Link Digital, we specialize in making your business smarter through cutting-edge Artificial Intelligence. </p>
+                            <p className="mb-4">Our solutions seamlessly integrate with your operations, unlocking new levels of efficiency and innovation. With a commitment to excellence, we elevate your business to thrive in the ever-evolving digital landscape.</p>
                             <div className="row g-3">
                                 <div className="col-sm-6">
                                     <h6 className="mb-3"><i className="fa fa-check text-primary me-2"></i>Award Winning</h6>
@@ -89,9 +85,8 @@ function Home() {
                         <div className="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
                             <div className="btn btn-sm border rounded-pill text-primary px-3 mb-3">Our Services</div>
                             <h1 className="mb-4">Our Excellent AI Solutions for Your Business</h1>
-                            <p className="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam
-                                amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus
-                                clita duo justo et tempor eirmod magna dolore erat amet</p>
+                            <p className="mb-4">Tailored AI Services to Elevate Your Business
+                                Unlock the full potential of Artificial Intelligence with our tailored solutions at [Your Business Name]. We offer dynamic and innovative services, seamlessly integrating AI into your operations. From intelligent automation to data-driven insights, our expertise ensures your business stays at the forefront of technological advancement.</p>
                             <a className="btn btn-primary rounded-pill px-4" href="">Read More</a>
                         </div>
                         <div className="col-lg-7">
@@ -104,8 +99,7 @@ function Home() {
                                                     <FontAwesomeIcon icon={faRobot} />
                                                 </div>
                                                 <h5 className="mb-3">Robotic Automation</h5>
-                                                <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet
-                                                    diam sed stet lorem.</p>
+                                                <p>Revolutionize Efficiency with Robotic Automation at Life Link Digital. Streamlined processes for enhanced productivity and a future-focused approach to work.</p>
                                                 <a className="btn px-3 mt-auto mx-auto" href="">Read More</a>
                                             </div>
                                         </div>
@@ -115,8 +109,7 @@ function Home() {
                                                     <FontAwesomeIcon icon={faPowerOff} />
                                                 </div>
                                                 <h5 className="mb-3">Machine learning</h5>
-                                                <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet
-                                                    diam sed stet lorem.</p>
+                                                <p>Empower success with our Machine Learning solutions. From predictive analytics to intelligent insights, we unleash innovation for your business growth.</p>
                                                 <a className="btn px-3 mt-auto mx-auto" href="">Read More</a>
                                             </div>
                                         </div>
@@ -130,8 +123,7 @@ function Home() {
                                                     <FontAwesomeIcon icon={faGraduationCap} />
                                                 </div>
                                                 <h5 className="mb-3">Education & Science</h5>
-                                                <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet
-                                                    diam sed stet lorem.</p>
+                                                <p>Empowering education and advancing scientific discovery, our innovative services pave the way for transformative learning experiences and groundbreaking research. Elevate your journey in education and science with us.    </p>
                                                 <a className="btn px-3 mt-auto mx-auto" href="">Read More</a>
                                             </div>
                                         </div>
@@ -141,8 +133,7 @@ function Home() {
                                                     <FontAwesomeIcon icon={faBrain} />
                                                 </div>
                                                 <h5 className="mb-3">Predictive Analysis</h5>
-                                                <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet
-                                                    diam sed stet lorem.</p>
+                                                <p>Strategic Insights through Predictive Analysis. Harness the future with our solutions, providing actionable intelligence for informed decision-making.</p>
                                                 <a className="btn px-3 mt-auto mx-auto" href="">Read More</a>
                                             </div>
                                         </div>
@@ -163,25 +154,24 @@ function Home() {
                         <div className="col-lg-6 align-self-center mb-md-5 pb-md-5 wow fadeIn" data-wow-delay="0.3s">
                             <div className="btn btn-sm border rounded-pill text-white px-3 mb-3">Why Choose Us</div>
                             <h1 className="text-white mb-4">We&lsquo;re Best in AI Industry with 10 Years of Experience</h1>
-                            <p className="text-light mb-4">Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed
-                                stet no labore lorem sit. Sanctus clita duo justo et tempor</p>
+                            <p className="text-light mb-4">AI Excellence with a Decade of Expertise. Our commitment, innovative solutions, and proven track record set us apart.</p>
                             <div className="d-flex align-items-center text-white mb-3">
                                 <div className="btn-sm-square bg-white text-primary rounded-circle me-3">
                                     <FontAwesomeIcon icon={faCheck} />
                                 </div>
-                                <span>Diam dolor diam ipsum et tempor sit</span>
+                                <span>Cutting-edge AI Solutions for Business Transformation</span>
                             </div>
                             <div className="d-flex align-items-center text-white mb-3">
                                 <div className="btn-sm-square bg-white text-primary rounded-circle me-3">
                                     <FontAwesomeIcon icon={faCheck} />
                                 </div>
-                                <span>Diam dolor diam ipsum et tempor sit</span>
+                                <span>Decade-long Expertise in Crafting Innovative Technologies</span>
                             </div>
                             <div className="d-flex align-items-center text-white mb-3">
                                 <div className="btn-sm-square bg-white text-primary rounded-circle me-3">
                                     <FontAwesomeIcon icon={faCheck} />
                                 </div>
-                                <span>Diam dolor diam ipsum et tempor sit</span>
+                                <span>Client-Centric Approach with Proven Success Stories</span>
                             </div>
                             <div className="row g-4 pt-3">
                                 <div className="col-sm-6">
@@ -226,7 +216,7 @@ function Home() {
                                 <img className="img-fluid" src="/project-1.jpg" alt="" />
                                 <a className="case-overlay text-decoration-none" href="">
                                     <small>Robotic Automation</small>
-                                    <h5 className="lh-base text-white mb-3">Lorem elitr magna stet eirmod labore amet labore clita
+                                    <h5 className="lh-base text-white mb-3">Revolutionizing Workflows: Robotic Automation Case Study Unleashes Efficiency Triumph.
                                     </h5>
                                     <span className="btn btn-square btn-primary">
                                         <FontAwesomeIcon icon={faArrowRight} />
@@ -239,7 +229,7 @@ function Home() {
                                 <img className="img-fluid" src="/project-2.jpg" alt="" />
                                 <a className="case-overlay text-decoration-none" href="">
                                     <small>Machine learning</small>
-                                    <h5 className="lh-base text-white mb-3">Lorem elitr magna stet eirmod labore amet labore clita
+                                    <h5 className="lh-base text-white mb-3">Transformative Insights: Unleashing Business Potential Through Innovative Machine Learning Solutions.
                                     </h5>
                                     <span className="btn btn-square btn-primary">
                                         <FontAwesomeIcon icon={faArrowRight} />
@@ -252,7 +242,7 @@ function Home() {
                                 <img className="img-fluid" src="/project-3.jpg" alt="" />
                                 <a className="case-overlay text-decoration-none" href="">
                                     <small>Predictive Analysis</small>
-                                    <h5 className="lh-base text-white mb-3">Lorem elitr magna stet eirmod labore amet labore clita
+                                    <h5 className="lh-base text-white mb-3">Strategic Precision: Elevating Decision-Making with Predictive Analysis Expertise.
                                     </h5>
                                     <span className="btn btn-square btn-primary">
                                         <FontAwesomeIcon icon={faArrowRight} />
@@ -279,26 +269,23 @@ function Home() {
                                 <Accordion.Item eventKey="0">
                                     <Accordion.Header>How to build a website?</Accordion.Header>
                                     <Accordion.Body>
-                                        Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
+                                        Discover the roadmap to website creation – from defining purpose to launch and ongoing optimization strategies.
                                     </Accordion.Body>
                                 </Accordion.Item>
                                 <Accordion.Item eventKey="1">
                                     <Accordion.Header>How long will it take to get a new website?</Accordion.Header>
                                     <Accordion.Body>
-                                        Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
-                                    </Accordion.Body>
+                                        The timeline for your new website depends on complexity. Generally, expect 4-6 weeks for completion. </Accordion.Body>
                                 </Accordion.Item>
                                 <Accordion.Item eventKey="2">
                                     <Accordion.Header>How to build a website?</Accordion.Header>
                                     <Accordion.Body>
-                                        Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
-                                    </Accordion.Body>
+                                        Embark on your website journey: Define purpose, choose domain, design layout, add content, optimize, and launch.</Accordion.Body>
                                 </Accordion.Item>
                                 <Accordion.Item eventKey="3">
                                     <Accordion.Header>How long will it take to get a new website?</Accordion.Header>
                                     <Accordion.Body>
-                                        Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
-                                    </Accordion.Body>
+                                        The timeline for your new website depends on complexity. Generally, expect 4-6 weeks for completion. </Accordion.Body>
                                 </Accordion.Item>
                             </Accordion>
                         </div>
@@ -307,26 +294,24 @@ function Home() {
                                 <Accordion.Item eventKey="0">
                                     <Accordion.Header>Will you maintain my site for me?</Accordion.Header>
                                     <Accordion.Body>
-                                        Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
+                                        Yes, we offer comprehensive site maintenance services, ensuring your website stays optimized, secure, and up-to-date.
                                     </Accordion.Body>
                                 </Accordion.Item>
                                 <Accordion.Item eventKey="1">
                                     <Accordion.Header>I’m on a strict budget. Do you have any low cost options?</Accordion.Header>
                                     <Accordion.Body>
-                                        Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
+                                        Yes, we offer budget-friendly solutions tailored to your needs, ensuring affordability without compromising quality or functionality.
                                     </Accordion.Body>
                                 </Accordion.Item>
                                 <Accordion.Item eventKey="2">
                                     <Accordion.Header>Will you maintain my site for me?</Accordion.Header>
                                     <Accordion.Body>
-                                        Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
-                                    </Accordion.Body>
+                                        Yes, we offer comprehensive site maintenance services, ensuring your website stays optimized, secure, and up-to-date. </Accordion.Body>
                                 </Accordion.Item>
                                 <Accordion.Item eventKey="3">
                                     <Accordion.Header>I’m on a strict budget. Do you have any low cost options?</Accordion.Header>
                                     <Accordion.Body>
-                                        Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
-                                    </Accordion.Body>
+                                        Yes, we offer budget-friendly solutions tailored to your needs, ensuring affordability without compromising quality or functionality. </Accordion.Body>
                                 </Accordion.Item>
                             </Accordion>
                         </div>
@@ -343,9 +328,7 @@ function Home() {
                         <div className="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
                             <div className="btn btn-sm border rounded-pill text-primary px-3 mb-3">Our Team</div>
                             <h1 className="mb-4">Meet Our Experienced Team Members</h1>
-                            <p className="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam
-                                amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus
-                                clita duo justo et tempor eirmod magna dolore erat amet</p>
+                            <p className="mb-4">Explore the expertise of our seasoned team members at Life Link Digital. Each individual brings diverse skills, commitment, and innovation to drive our collective success.</p>
                             <a className="btn btn-primary rounded-pill px-4" href="">Read More</a>
                         </div>
                         <div className="col-lg-7">
@@ -456,9 +439,7 @@ function Home() {
                         <div className="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
                             <div className="btn btn-sm border rounded-pill text-themeColor px-3 mb-3">Testimonial</div>
                             <h1 className="mb-4">What Say Our Clients!</h1>
-                            <p className="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam
-                                amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus
-                                clita duo justo et tempor eirmod magna dolore erat amet</p>
+                            <p className="mb-4">Hear What Our Satisfied Partners Have to Say About Their Transformative Experiences with Us.</p>
                             <a className="btn btn-primary rounded-pill px-4" href="">Read More</a>
                         </div>
                         <div className="col-lg-7 wow fadeIn" >
@@ -470,12 +451,12 @@ function Home() {
                                     // prevEl: '.swiper-button-prev',
                                 }}
                                 modules={[Navigation]}
-                                // style={{  }}
+                            // style={{  }}
                             >
                                 <SwiperSlide >
                                     <div className="testimonial-item px-5">
                                         <i className="fa fa-quote-left fa-2x text-themeColor mb-3"></i>
-                                        <p className="fs-4">Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat amet</p>
+                                        <p className="fs-4">Elevating our project with expertise and dedication. Their innovative solutions exceeded our expectations.</p>
                                         <div className="d-flex align-items-center justify-content-center">
                                             <img className="img-fluid flex-shrink-0 rounded-circle" src="/testimonial-1.jpg"
                                                 style={{ 'width': '60px', 'height': '60px' }} />
@@ -489,7 +470,7 @@ function Home() {
                                 <SwiperSlide>
                                     <div className="testimonial-item px-5">
                                         <i className="fa fa-quote-left fa-2x text-themeColor mb-3"></i>
-                                        <p className="fs-4">Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat amet</p>
+                                        <p className="fs-4">Impressed with their professionalism and commitment. Their solutions brought efficiency and excellence to our project.</p>
                                         <div className="d-flex align-items-center justify-content-center">
                                             <img className="img-fluid flex-shrink-0 rounded-circle" src="/testimonial-2.jpg"
                                                 style={{ 'width': '60px', 'height': '60px' }} />
@@ -503,7 +484,7 @@ function Home() {
                                 <SwiperSlide>
                                     <div className="testimonial-item px-5 ">
                                         <i className="fa fa-quote-left fa-2x text-themeColor mb-3"></i>
-                                        <p className="fs-4">Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat amet</p>
+                                        <p className="fs-4">Their dedication and expertise exceeded our expectations. A reliable partner for achieving outstanding results in every project.</p>
                                         <div className="d-flex align-items-center justify-content-center">
                                             <img className="img-fluid flex-shrink-0 rounded-circle" src="/testimonial-3.jpg"
                                                 style={{ 'width': '60px', 'height': '60px' }} />
