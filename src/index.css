@@ -482,3 +482,17 @@ h6,
     display: block;
     object-fit: cover;
 }
+
+.card-style {
+    transition: all 0.5s linear;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+@media screen and (max-width: 576px) {
+    .row {
+        width: 100%;
+    }
+}
