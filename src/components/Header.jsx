@@ -1,32 +1,31 @@
 import './Header.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link, NavLink } from 'react-router-dom';
-import { useEffect, useRef, useState } from 'react';
 
 function Header() {
-    const sidebarRef = useRef();
-    const [service, setService] = useState(false);
-    const [sidebar, setSideBar] = useState(false);
+    // const sidebarRef = useRef();
+    // const [service, setService] = useState(false);
+    // const [sidebar, setSideBar] = useState(false);
 
-    const handleOutSideClick = (e) => {
-        if (sidebarRef.current && !sidebarRef.current.contains(e.target)) {
-            setSideBar(false);
-        }
-    }
+    // const handleOutSideClick = (e) => {
+    //     if (sidebarRef.current && !sidebarRef.current.contains(e.target)) {
+    //         setSideBar(false);
+    //     }
+    // }
 
     // const handleSidebarScroll = () => {
     //     setSideBar(false);
     // }
 
 
-    useEffect(() => {
-        document.addEventListener('mousedown', handleOutSideClick);
-        // window.addEventListener('scroll', handleSidebarScroll);
-        return () => {
-            document.addEventListener('mousedown', handleOutSideClick);
-            // window.addEventListener('scroll', handleSidebarScroll);
-        }
-    }, []);
+    // useEffect(() => {
+    //     document.addEventListener('mousedown', handleOutSideClick);
+    //     window.addEventListener('scroll', handleSidebarScroll);
+    //     return () => {
+    //         document.addEventListener('mousedown', handleOutSideClick);
+    //         window.addEventListener('scroll', handleSidebarScroll);
+    //     }
+    // }, []);
 
 
     return (
@@ -36,46 +35,127 @@ function Header() {
                 <div className="container">
                     <nav className="navbar navbar-expand-lg navbar-dark p-0 py-5">
                         <Link to="/" className="navbar-brand">
-                            {/* <h1 className="text-white">AI<span className="text-dark">.</span>Tech</h1> */}
                             <img style={{ height: '50px', width: '150px' }} src="Life Link Digital White Small.png" alt="Life Link Digital" />
                         </Link>
                         <button type="button" className="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
                             data-bs-target="#navbarCollapse">
-                            <span className="navbar-toggler-icon"></span>
                         </button>
                         <div className="collapse navbar-collapse" id="navbarCollapse">
                             <div className="navbar-nav ms-auto">
-                                {sidebar ? '' : (
+                                <NavLink to="/" className="nav-item nav-link">Home</NavLink>
+                                <NavLink to="/about" className="nav-item nav-link">About</NavLink>
+                                <NavLink to="/services" className="nav-item nav-link">  
+
+                                    <div className="dropdown">
+                                        <div>
+                                            Service  &nbsp;
+                                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill="currentColor" d="M12 16a1 1 0 0 1-.64-.23l-6-5a1 1 0 1 1 1.28-1.54L12 13.71l5.36-4.32a1 1 0 0 1 1.41.15a1 1 0 0 1-.14 1.46l-6 4.83A1 1 0 0 1 12 16" />
+                                            </svg>
+                                        </div>
+                                        <div className="dropdown-content">
+                                            <a href="/gxpsoftware">Software Design/Development</a>
+                                            <a href="/WebsiteDevelopment">Website Design</a>
+                                            <a href="/UIUXDesign">Pharma Digitization</a>
+                                        </div>
+                                    </div>
+
+                                </NavLink>
+
+                                {/* <div className="megadrop">
+                                        <div className="megadrop-item">
+                                            <a className="megadrop-item-link" href="/gxpsoftware">
+                                                <div className="megadrop-item-about">
+                                                    <strong>Software Design/Development</strong>
+                                                </div>
+                                            </a>
+                                            <a className="megadrop-item-link" href="/WebsiteDevelopment">
+                                                <div className="megadrop-item-about">
+                                                    <strong>Website Design</strong>
+                                                </div>
+                                            </a>
+                                            <a className="megadrop-item-link" href="/WebsiteDevelopment">
+                                                <div className="megadrop-item-about">
+                                                    <strong>SME Guidances</strong>
+                                                </div>
+                                            </a>
+                                            <a className="megadrop-item-link" href="/UIUXDesign">
+                                                <div className="megadrop-item-about">
+                                                    <strong>Pharma Digitization</strong>
+                                                </div>
+                                            </a>
+                                            <a className="megadrop-item-link" href="/EnterpriseSoftware">
+                                                <div className="megadrop-item-about">
+                                                    <strong>Healthcare Digitization</strong>
+                                                </div>
+                                            </a>
+                                            <a className="megadrop-item-link" href="/CustomSoftware">
+                                                <div className="megadrop-item-about">
+                                                    <strong>Hospital Management</strong>
+                                                </div>
+                                            </a>
+                                            <a className="megadrop-item-link" href="/BrandReputation">
+                                                <div className="megadrop-item-about">
+                                                    <strong>School/College Management</strong>
+                                                </div>
+                                            </a>
+                                            <a className="megadrop-item-link" href="/SupportMaintenance">
+                                                <div className="megadrop-item-about">
+                                                    <strong>Computer Software Validation Assurance</strong>
+                                                </div>
+                                            </a>
+                                            <a className="megadrop-item-link" href="/SupportMaintenance">
+                                                <div className="megadrop-item-about">
+                                                    <strong>Quality Risk Management</strong>
+                                                </div>
+                                            </a>
+                                            <a className="megadrop-item-link" href="/SupportMaintenance">
+                                                <div className="megadrop-item-about">
+                                                    <strong>SDLC Management</strong>
+                                                </div>
+                                            </a>
+                                            <a className="megadrop-item-link" href="/SupportMaintenance">
+                                                <div className="megadrop-item-about">
+                                                    <strong>GXP Audit Remidiation</strong>
+                                                </div>
+                                            </a>
+
+                                        </div>
+                                    </div> */}
+                                <NavLink to="/industries" className="nav-item nav-link">Industries</NavLink>
+                                <NavLink to="/features" className="nav-item nav-link">Features</NavLink>
+                                <NavLink to="/contact" className="nav-item nav-link">Contact Us</NavLink>
+                                {/* {sidebar ? '' : (
                                     <div onClick={() => setSideBar(!sidebar)} className="toggleSidebar btn btn-primary cursor-pointer">
                                         <svg width="24" height="24" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                                             <path fill="#fff" fillRule="evenodd" d="M2 1L1 2v12l1 1h12l1-1V2l-1-1zm0 13V2h7v12z" clipRule="evenodd" />
                                         </svg>
                                     </div>
-                                )}
+                                )} */}
                             </div>
                             <button type="button" className="btn text-white p-0 d-none d-lg-block" data-bs-toggle="modal"
                                 data-bs-target="#searchModal"><i className="fa fa-search"></i></button>
                         </div>
                     </nav>
-                </div>
-                <div className={`sidebar  px-4 py-3 d-none d-lg-block`} style={sidebar ? { 'transform': 'translate(0, 0)' } : {}} ref={sidebarRef}>
-                    <div className="sidebar_top ms-auto ">
-                        <div onClick={() => setSideBar(false)} className="cross_icon cursor-pointer btn btn-light cursor-pointer  ">
-                            <svg width="24" height="24" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="#fff" fillRule="evenodd" d="M14.5 3.75a.75.75 0 0 1 1.5 0v8.5a.75.75 0 0 1-1.5 0zm-6.341.47a.75.75 0 0 0 0 1.06l1.97 1.97H.75a.75.75 0 0 0 0 1.5h9.379l-1.97 1.97a.75.75 0 1 0 1.06 1.06l3.25-3.25L13 8l-.53-.53l-3.25-3.25a.75.75 0 0 0-1.061 0" clipRule="evenodd" />
+                </div >
+                {/* <div className={`sidebar bg-success px-4 py-3 d-none d-lg-block`} style={sidebar ? { 'transform': 'translate(0, 0)' } : {}} ref={sidebarRef}> */}
+                {/* <div className="sidebar_top ms-auto ">
+                        <div onClick={() => setSideBar(false)} className="cross_icon cursor-pointer btn btn-light cursor-pointer ">
+                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#fff" d="M10.5 17a1 1 0 0 1-.71-.29a1 1 0 0 1 0-1.42L13.1 12L9.92 8.69a1 1 0 0 1 0-1.41a1 1 0 0 1 1.42 0l3.86 4a1 1 0 0 1 0 1.4l-4 4a1 1 0 0 1-.7.32" />
                             </svg>
                         </div>
-                    </div>
-                    <div className="sidebar_bottom">
-                        <div className="nav_links">
+                    </div> */}
+                {/* <div className="sidebar_bottom"> */}
+                {/* <div className="nav_links">
                             <NavLink to="/" className="nav-item nav-link">Home</NavLink>
                         </div>
                         <div className="nav_links">
                             <NavLink to="/about" className="nav-item nav-link">About</NavLink>
-                        </div>
-                        <div onClick={() => setService(!service)} className="nav_links">
-                            <NavLink to="#" className="nav-item nav-link">Services</NavLink>
-                            {service ? (
+                        </div> */}
+                {/* <div onClick={() => setService(!service)} className="nav_links"> */}
+                {/* <NavLink to="#" className="nav-item nav-link">Services</NavLink> */}
+                {/* {service ? (
                                 <div className="arrowIconDown">
                                     <svg width="24" height="24" viewBox="0 0 16 7" xmlns="http://www.w3.org/2000/svg">
                                         <path fill="#fff" d="M8 6.5a.47.47 0 0 1-.35-.15l-4.5-4.5c-.2-.2-.2-.51 0-.71c.2-.2.51-.2.71 0l4.15 4.15l4.14-4.14c.2-.2.51-.2.71 0c.2.2.2.51 0 .71l-4.5 4.5c-.1.1-.23.15-.35.15Z" />
@@ -87,18 +167,22 @@ function Header() {
                                         <path fill="#fff" d="M1.5 13a.47.47 0 0 1-.35-.15c-.2-.2-.2-.51 0-.71L5.3 7.99L1.15 3.85c-.2-.2-.2-.51 0-.71c.2-.2.51-.2.71 0l4.49 4.51c.2.2.2.51 0 .71l-4.5 4.49c-.1.1-.23.15-.35.15" />
                                     </svg>
                                 </div>
-                            )}
-                        </div>
-                        {service ? (
+                            )} */}
+
+                {/* </div> */}
+                {/* {service ? (
                             <div className='service_container' >
                                 <div className="service_links">
-                                    <NavLink to="/software-development" className="nav-item nav-link">Software Developement</NavLink>
+                                    <NavLink to="/services" className="nav-item nav-link">Software Developement</NavLink>
                                 </div>
                                 <div className="service_links">
                                     <NavLink to="/services" className="nav-item nav-link">Website Developement</NavLink>
                                 </div>
                                 <div className="service_links">
                                     <NavLink to="/services" className="nav-item nav-link">SME Guidence</NavLink>
+                                </div>
+                                <div className="service_links">
+                                    <NavLink to="/services" className="nav-item nav-link">Pharma Digitization</NavLink>
                                 </div>
                                 <div className="service_links">
                                     <NavLink to="/services" className="nav-item nav-link">Pharma Digitization</NavLink>
@@ -125,16 +209,16 @@ function Header() {
                                     <NavLink to="/services" className="nav-item nav-link">GXP Audit ...</NavLink>
                                 </div>
                             </div>
-                        ) : ''}
-                        <div className="nav_links">
+                        ) : ''} */}
+                {/* <div className="nav_links">
                             <NavLink to="/features" className="nav-item nav-link">Features</NavLink>
                         </div>
                         <div className="nav_links">
                             <NavLink to="/contact" className="nav-item nav-link">Contacts</NavLink>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                        </div> */}
+                {/* </div> */}
+                {/* </div> */}
+            </div >
             {/* <!-- Navbar End --> */}
 
         </>
