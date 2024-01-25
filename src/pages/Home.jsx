@@ -14,7 +14,9 @@ function Home() {
 
             {/* <!-- Hero Start --> */}
             <div className="container-fluid pt-5 bg-themeColor hero-header mb-5">
-                <div className="container pt-5">
+                <div className="container pt-5"
+             
+                >
                     <div className="row g-5 pt-5">
                         <div className="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
                             <div className="btn btn-sm border rounded-pill text-white px-3 mb-3 animated slideInRight">Life Link Digital</div>
@@ -24,7 +26,7 @@ function Home() {
                             <a href="" className="btn btn-outline-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">Contact Us</a>
                         </div>
                         <div className="col-lg-6 align-self-end text-center text-lg-end">
-                            <img className="img-fluid" src="/hero-img.png" alt="" />
+                            <img className="img-head " src="/3dd.png" alt="" />
                         </div>
                     </div>
                 </div>

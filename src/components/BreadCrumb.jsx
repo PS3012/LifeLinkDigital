@@ -21,7 +21,7 @@ function BreadCrumb(_props) {
                             </nav>
                         </div>
                         <div className="col-lg-6 align-self-end text-center text-lg-end">
-                            <img className="img-fluid" src="/hero-img.png" alt="" style={{ 'max-height': '300px' }} />
+                            <img className="img-fluid " src="/abcd.png" alt="" style={{ 'max-height': '300px' }} />
                         </div>
                     </div>
                 </div>

@@ -3,7 +3,7 @@
     --dark: #14183E;
     --light: #F4F7FE;
     --secondary: #15ACE1;
-    --themeColor: #1363C6;
+    --themeColor: #020202;
 }
 
 body{
@@ -495,4 +495,7 @@ h6,
     .row {
         width: 100%;
     }
+}
+.img-head{
+    height: 500px;
 }
