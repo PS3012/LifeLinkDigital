@@ -35,7 +35,7 @@ function Header() {
                 <div className="container">
                     <nav className="navbar navbar-expand-lg navbar-dark p-0 py-5">
                         <Link to="/" className="navbar-brand">
-                            <img style={{ height: '50px', width: '150px' }} src="Life Link Digital White Small.png" alt="Life Link Digital" />
+                            <img style={{ height: '50px', width: '150px' }} src="new-logo.png" alt="Life Link Digital" />
                         </Link>
                         <button type="button" className="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
                             data-bs-target="#navbarCollapse">

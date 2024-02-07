@@ -18,7 +18,7 @@ function About() {
         <div className="container">
           <div className="row g-5 align-items-center">
             <div className="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-              <div className="about">
+              <div className="abouts">
                 <img className="img-fluid" src="/gradient.jpg" />
               </div>
             </div>
@@ -36,8 +36,6 @@ function About() {
                 seamlessly integrate with the dynamic needs of today's
                 fast-paced world.
               </p>
-             
-            
             </div>
           </div>
         </div>
@@ -45,21 +43,88 @@ function About() {
       {/* <!-- About End --> */}
 
       {/* <!-- Feature Start --> */}
-      <div className="container-fluid bg-themeColor feature pt-5">
-        <div className="container pt-5">
+      <div className="card-section container-fluid pt-5 pb-5">
+        <div className="container pt-5 pb-5">
           <div className="row g-5">
-                    <div className="ms-3">
-                      
+            <div className="ms-3">
+              <h2 className="text-center">Our Expertise</h2>
+            </div>
+            <div className="expertise-cards">
+              <div className="card-expertise">
+                <div className="img-card">
+                  <img
+                    src="https://cdn3d.iconscout.com/3d/premium/thumb/web-development-5374063-4496032.png?f=webp"
+                    alt=""
+                    className="card-img"
+                  />
+                </div>
+                <div className="card-pera">
+                  <div className="software">Software Development</div>
+                  <div className="software-pera">
+                    {" "}
+                    Our team of seasoned developers is adept at creating
+                    scalable, efficient, and secure software applications
+                    tailored to your specifications.
+                  </div>
+                </div>
+              </div>
+              <div className="card-expertise">
+                <div className="img-card">
+                  <img
+                    src="https://cdn3d.iconscout.com/3d/premium/thumb/web-security-5617614-4674325.png?f=webp"
+                    alt=""
+                    className="card-img"
+                  />
+                </div>
+                <div className="card-pera">
+                  <div className="software">Web Design</div>
+                  <div className=" software-pera">
+                    {" "}
+                    Our web design services focus on creating responsive, user-friendly,robust backends with the latest web technologies, and visually captivating websites.
+                  </div>
+                </div>
+              </div>{" "}
+              <div className="card-expertise">
+                <div className="img-card">
+                  <img
+                    src="https://cdn3d.iconscout.com/3d/premium/thumb/online-pharmacy-9711183-7909752.png"
+                    alt=""
+                    className="card-img"
+                  />
+                </div>
+                <div className="card-pera">
+                  <div className="software">Pharma Digitization</div>
+                  <div className="software-pera">
+                    {" "}
+                    The pharma industry faces a paradigm shift, which paves the way for more efficient, patient-centric, and data-driven approaches.
+                  </div>
+                </div>
+              </div>{" "}
+              <div className="card-expertise">
+                <div className="img-card">
+                  <img
+                    src="https://cdn3d.iconscout.com/3d/premium/thumb/ai-chip-in-hand-7356110-6020304.png?f=webp"
+                    alt=""
+                    className="card-img"
+                  />
+                </div>
+                <div className="card-pera">
+                  <div className="software">Artificial Intelligence</div>
+                  <div className=" software-pera">
+                    {" "}
+                    Embrace the future with AI solutions tailored to enhance your business operations. From machine learning algorithms to natural language processing.
                   </div>
                 </div>
               </div>
             </div>
-            <div
-              className="col-lg-6 align-self-end text-center text-md-end wow fadeIn"
-              data-wow-delay="0.5s"
-            >
-              
+          </div>
+        </div>
       </div>
+
+      <div
+        className="col-lg-6 align-self-end text-center text-md-end wow fadeIn"
+        data-wow-delay="0.5s"
+      ></div>
       {/* <!-- Feature End --> */}
 
       {/* <!-- Team Start --> */}
