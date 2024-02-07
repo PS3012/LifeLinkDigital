@@ -44,7 +44,7 @@ function Home() {
                             </div>
                         </div>
                         <div className="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                            <div className="btn btn-sm border rounded-pill text-white px-3 mb-3">About Us</div>
+                            <div className="btn btn-sm border rounded-pill text-dark px-3 mb-3">About Us</div>
                             <h1 className="mb-4">We Make Your Business Smarter with Artificial Intelligence</h1>
                             <p className="mb-2">Transforming Possibilities into Reality: At Life Link Digital, we specialize in making your business smarter through cutting-edge Artificial Intelligence. </p>
                             <p className="mb-4">Our solutions seamlessly integrate with your operations, unlocking new levels of efficiency and innovation. With a commitment to excellence, we elevate your business to thrive in the ever-evolving digital landscape.</p>

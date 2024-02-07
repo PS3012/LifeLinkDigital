@@ -140,7 +140,7 @@ h6,
 }
 
 .hero-header .breadcrumb-item+.breadcrumb-item::before {
-    color: var(--light);
+    color: var(--dark);
 }
 
 
