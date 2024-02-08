@@ -25,6 +25,7 @@ import MergerAndAcquisition from "./pages/services/MergerAndAcquisition";
 import AiAssistedPharma from "./pages/services/AiAssistedPharma";
 import AiAssistedCultureOfQuality from "./pages/services/AiAssistedCultureOfQuality";
 import GxpSystems from "./pages/services/GxpSystems";
+import IntelligentPharma from "./pages/services/IntelligentPharma";
 
 function App() {
   return (
@@ -55,6 +56,7 @@ function App() {
           <Route path="/ai-assited-pharma" element={<AiAssistedPharma />} />
           <Route path="/ai-assited-culture-of-quality" element={<AiAssistedCultureOfQuality />} />
           <Route path="/connected-and-integrated-gxp-systems" element={<GxpSystems />} />
+          <Route path="/intelligent-pharma" element={<IntelligentPharma />} />
         </Routes>
         <Footer />
       </BrowserRouter>
