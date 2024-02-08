@@ -8,7 +8,7 @@ function Footer() {
         <>
 
             {/* <!-- Newsletter Start --> */}
-            <div className="container-fluid bg-themeColor newsletter py-5">
+            {/* <div className="container-fluid bg-themeColor newsletter py-5">
                 <div className="container">
                     <div className="row g-5 align-items-center">
                         <div className="col-md-5 ps-lg-0 pt-5 pt-md-0 text-start wow fadeIn" data-wow-delay="0.3s">
@@ -27,7 +27,7 @@ function Footer() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
             {/* <!-- Newsletter End --> */}
 
             {/* <!-- Footer Start --> */}
