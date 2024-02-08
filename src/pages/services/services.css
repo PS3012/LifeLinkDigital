@@ -1,69 +1,51 @@
+/* FILEPATH: /C:/Users/HP/Documents/GitHub/LifeLinkDigital/src/pages/services/services.css */
+
+/* Top Container */
 .top_container {
-  /* background: linear-gradient(45deg, grey, black); */
-  color: white;
-  color: #000;
   padding: 5%;
   padding-top: 2%;
-  /* background-image: url("ebmr1.jpg"); */
   background-size: cover;
   background-position: center;
 }
+
 .top_container p {
   font-size: 1.2rem;
   font-weight: 400;
+  margin-top: 22px;
 }
 
-.top_container h1 {
-  /* color: #008df9; */
+.top_container h1, .heading {
   color: cornflowerblue;
-  font-size: 4rem;
-  /* text-align: center; */
-    /* color: #008df9; */
   font-size: 4rem;
   text-align: center;
   font-family: "Times New Roman", Times, serif;
 }
-.heading {
-  /* color: #008df9; */
-  color: cornflowerblue;
 
-  font-size: 4rem;
-  text-align: center;
-  font-family: "Times New Roman", Times, serif;
-}
 .top_paragraphs {
   font-family: Georgia, "Times New Roman", Times, serif;
-  /* font-weight: bolder;
-  font-size: 5rem; */
 }
+
 .why_line {
   color: bisque;
   color: blueviolet;
 }
+
 .top_container ul li {
   font-size: 1.1rem;
+  margin-top: 2%;
 }
 
-.top_container p {
-  margin-top: 22px;
-}
-.top_container h5 {
-  margin-top: 22px;
-}
-.top_container h6 {
+.top_container h5, .top_container h6 {
   margin-top: 22px;
 }
 
 li b {
   color: blanchedalmond;
   color: blueviolet;
-
   font-size: 1.22rem;
 }
-ul li {
-  margin-top: 2%;
-}
 
+/* Bottom Line */
 .bottom_line {
   color: burlywood;
   color: blueviolet;
@@ -72,29 +54,19 @@ ul li {
   padding-top: 2%;
   text-align: center;
 }
+
+/* Middle Line */
 .middle_line {
   color: bisque;
   color: blueviolet;
 }
 
-/* other than logbook */
-.ps_paragraph {
-  color: bisque;
-  color: blueviolet;
-
-}
-li ul li {
-  list-style-type: square ;
-}
-
-
-/* ///rtry */
-
+/* Paragraphs */
 .ps_paragraph_container {
   background-color: #f2f2f2;
   padding: 20px;
   border-radius: 8px;
-    border: 2px solid #ccc;
+  border: 2px solid #ccc;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -105,128 +77,113 @@ li ul li {
 }
 
 .ps_paragraph b {
-  color: #009688; /* or any other color you prefer for bold text */
+  color: #009688;
 }
 
-
-/*  */
+/* Content Container */
 .content_container {
-  background-color: #f9f9f9; /* Light gray background */
+  background-color: #f9f9f9;
   padding: 20px;
   border-radius: 8px;
-  border: 2px solid #3498db; /* Blue border */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  border: 2px solid #3498db;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Style for the main ul */
+/* Lists */
 ul {
   list-style-type: none;
   padding: 0;
 }
 
-/* Style for the main li */
 ul > li {
   margin-bottom: 20px;
 }
 
-/* Style for the nested ul */
 ul ul {
   list-style-type: none;
   padding-left: 20px;
 }
 
-/* Style for the nested li */
 ul ul li {
   margin-bottom: 10px;
 }
 
-/* Style for bold text */
 b {
-  color: #3498db; /* Blue color for bold text */
+  color: #3498db;
 }
 
-/* Style for the text content */
 li {
   font-size: 16px;
   line-height: 1.5;
-  color: #333; /* Dark text color */
+  color: #333;
 }
 
-
-/* heading */
-
+/* Service Heading */
 .service_heading {
-  text-align: center; /* Center align the heading */
-  margin-bottom: 30px; /* Add some spacing below the heading */
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .heading {
-  font-size: 36px; /* Adjust the font size */
-  color: #333; /* Dark color for the heading */
-  text-transform: capitalize; /* Capitalize the text */
-  margin: 0; /* Remove default margin */
-  font-weight: bold; /* Make the heading bold */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle text shadow */
+  font-size: 36px;
+  color: #333;
+  text-transform: capitalize;
+  margin: 0;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Style for the bottom line */
+/* Bottom Line Container */
 .bottom_line_container {
-  text-align: center; /* Center align the heading */
-  margin-top: 20px; /* Add some spacing above the heading */
-  margin-bottom: 30px; /* Add some spacing below the heading */
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .bottom_line {
-  font-size: 24px; /* Adjust the font size */
-  color: #27ae60; /* Green color for the heading */
-  margin: 0; /* Remove default margin */
-  font-weight: bold; /* Make the heading bold */
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Add a subtle text shadow */
+  font-size: 24px;
+  color: #27ae60;
+  margin: 0;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-
-/* first para */
-
+/* Paragraph Container */
 .paragraph_container {
-  margin-bottom: 30px; /* Add some spacing below the paragraph */
+  margin-bottom: 30px;
 }
 
 .paragraph {
-  font-size: 18px; /* Adjust the font size */
-  line-height: 1.6; /* Increase line height for readability */
-  color: #333; /* Dark color for the text */
-  text-align: center; /* Center align the text */
-  /* max-width: 600px; */
-  margin: 0 auto; /* Center align the paragraph */
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .paragraph::first-letter {
-  font-size: 24px; /* Increase the font size of the first letter for emphasis */
-  font-weight: bold; /* Make the first letter bold */
-  color: #27ae60; /* Green color for the first letter */
+  font-size: 24px;
+  font-weight: bold;
+  color: #27ae60;
 }
 
-/* //middle line */
+/* Middle Line Container */
 .middle_line_container {
-  background-color: #f9f9f9; /* Light gray background */
+  background-color: #f9f9f9;
   padding: 20px;
   border-radius: 8px;
-  border: 2px solid #3498db; /* Blue border */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow */
-  margin-bottom: 30px; /* Add some spacing below the container */
+  border: 2px solid #3498db;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
   margin-top: 2%;
 }
 
 .middle_line {
-  font-size: 16px; /* Adjust the font size */
-  color: #333; /* Dark color for the text */
-  margin: 0; /* Remove default margin */
+  font-size: 16px;
+  color: #333;
+  margin: 0;
 }
 
 .middle_line b {
-  color: #3498db; /* Blue color for bold text */
-}
-
-.top_container {
-  /* background-color: #f0f0f0; */
+  color: #3498db;
 }
