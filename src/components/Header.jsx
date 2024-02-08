@@ -86,13 +86,18 @@ function Header() {
                           USFDA warning letter management
                         </li>
                         <li onClick={() => navigate("/merger-and-acquisition")}>Merger & acquisition</li>
-                        <li onClick={() => navigate("/ai-assited-pharma")}>AI-Assisted Pharma 4.0</li>
                         <li onClick={() => navigate("/ai-assited-culture-of-quality")}>
                           AI-Assisted Culture of Quality
                         </li>
                         <li onClick={() => navigate("/connected-and-integrated-gxp-systems")}>
                           Connected & Integrated GXP Systems
                         </li>
+                        <li onClick={() => navigate("/ai-assited-pharma")}>AI-Assisted Pharma 4.0</li>
+                        <li onClick={() => navigate("/intelligent-pharma")}>
+                          Intelligent Pharma Manufacturing Factory
+                        </li>
+                        <li onClick={() => navigate("/gxp-training")}>GxP Training </li>
+                        <li onClick={() => navigate("/rpa")}>Robotic Process Automation (RPA) </li>
                       </ul>
                       {/* <a href="/gxpsoftware">Software Design/Development</a>
                       <a href="/WebsiteDevelopment">Website Design</a>
