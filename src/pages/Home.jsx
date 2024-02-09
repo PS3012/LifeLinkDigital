@@ -110,7 +110,7 @@ function Home() {
                                                 <div className="service-icon btn-square">
                                                     <FontAwesomeIcon icon={faPowerOff} />
                                                 </div>
-                                                <h5 className="mb-3">Machine learning</h5>
+                                                <h5 className="mb-3">Machine learning / AI</h5>
                                                 <p>Empower success with our Machine Learning solutions. From predictive analytics to intelligent insights, we unleash innovation for your business growth.</p>
                                                 <a className="btn px-3 mt-auto mx-auto" href="">Read More</a>
                                             </div>
@@ -124,8 +124,8 @@ function Home() {
                                                 <div className="service-icon btn-square">
                                                     <FontAwesomeIcon icon={faGraduationCap} />
                                                 </div>
-                                                <h5 className="mb-3">Education & Science</h5>
-                                                <p>Empowering education and advancing scientific discovery, our innovative services pave the way for transformative learning experiences and groundbreaking research. Elevate your journey in education and science with us.    </p>
+                                                <h5 className="mb-3">Software Development</h5>
+                                                <p>Empowering Software development is the process of conceiving, specifying, designing, programming, documenting, testing, and bug fixing involved in creating and maintaining applications, frameworks, or other software components.    </p>
                                                 <a className="btn px-3 mt-auto mx-auto" href="">Read More</a>
                                             </div>
                                         </div>
