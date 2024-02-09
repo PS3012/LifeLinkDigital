@@ -219,7 +219,7 @@ h6,
 }
 
 .service-item:hover {
-    background: var(--themeColor);
+    background: var(--secondary);
 }
 
 .service-item .service-icon {
