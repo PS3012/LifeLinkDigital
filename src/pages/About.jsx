@@ -1,7 +1,7 @@
 import BreadCrumb from "../components/BreadCrumb";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCheck, faUsers } from "@fortawesome/free-solid-svg-icons";
-import { faFacebookF, faInstagram, faLinkedinIn, faTwitter } from "@fortawesome/free-brands-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faCheck, faUsers } from "@fortawesome/free-solid-svg-icons";
+// import { faFacebookF, faInstagram, faLinkedinIn, faTwitter } from "@fortawesome/free-brands-svg-icons";
 
 function About() {
   return (
