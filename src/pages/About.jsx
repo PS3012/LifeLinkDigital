@@ -20,7 +20,7 @@ function About() {
             <div className="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
               {/* <div className="btn btn-sm border rounded-pill text-primary px-3 mb-3">About Us</div> */}
               <h3 className="mb-4">Lifelink Digital: Streamlining GxP Compliance for Global Pharma</h3>
-              <div className="paragraph_container">
+              <div className="paragraph_container ">
                 <p className="paragraph">
                   Lifelink Digital is a leading global provider of GxP software solutions, empowering pharmaceutical and
                   life sciences companies to achieve and maintain compliance efficiently. With a deep understanding of
@@ -58,15 +58,10 @@ function About() {
           </div>
         </div>
       </div>
+
       <div className="container-fluid py-5">
         <div className="container">
           <div className="row g-5 align-items-center">
-            <div className="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-              <div className="abouts">
-                <img className="img-fluid" src="/about4.jpg" />
-              </div>
-            </div>
-            
             <div className="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
               {/* <div className="btn btn-sm border rounded-pill text-primary px-3 mb-3">About Us</div> */}
               <h3 className="mb-4">By partnering with Lifelink Digital, you can:</h3>
@@ -99,13 +94,26 @@ function About() {
                 </h5>
               </div>
             </div>
+
+            <div className="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+              <div className="abouts">
+                <img className="img-fluid" src="/about4.jpg" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
       {/* <!-- About End --> */}
-      <div className="container-fluid py-5">
+      <div className="container-fluid section2 py-5">
         <div className="container">
           <div className="row g-5 align-items-center">
+            <div className="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+              <div className="abouts">
+                <img className="img-fluid" src="/about5.jpg" />
+              </div>
+            </div>
+
             <div className="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
               {/* <div className="btn btn-sm border rounded-pill text-primary px-3 mb-3">About Us</div> */}
               <h4 className="why_line">Quality Policy</h4>
@@ -149,15 +157,10 @@ function About() {
                 </ul>
               </div>
             </div>
-
-            <div className="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-              <div className="abouts">
-                <img className="img-fluid" src="/about4.jpg" />
-              </div>
-            </div>
           </div>
         </div>
       </div>
+
       <div className="container-fluid py-5">
         <div className="container">
           <div className="row g-5 align-items-center">
@@ -199,7 +202,7 @@ function About() {
 
             <div className="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
               <div className="abouts">
-                <img className="img-fluid" src="/about4.jpg" />
+                <img className="img-fluid" src="/about6.jpg" />
               </div>
             </div>
           </div>
@@ -285,8 +288,6 @@ function About() {
           </div>
         </div>
       </div> */}
-
-      <div className="col-lg-6 align-self-end text-center text-md-end wow fadeIn" data-wow-delay="0.5s"></div>
       {/* <!-- Feature End --> */}
 
       {/* <!-- Team Start --> */}
