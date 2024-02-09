@@ -1,7 +1,7 @@
 import BreadCrumb from "../components/BreadCrumb";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCheck, faUsers } from "@fortawesome/free-solid-svg-icons";
-import { faFacebookF, faInstagram, faLinkedinIn, faTwitter } from "@fortawesome/free-brands-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faCheck, faUsers } from "@fortawesome/free-solid-svg-icons";
+// import { faFacebookF, faInstagram, faLinkedinIn, faTwitter } from "@fortawesome/free-brands-svg-icons";
 
 function About() {
   return (
@@ -9,7 +9,7 @@ function About() {
       <BreadCrumb page="About Us" />
 
       {/* <!-- About Start --> */}
-      <div className="container-fluid py-5">
+      <div className="container-fluid section2  py-5">
         <div className="container">
           <div className="row g-5 align-items-center">
             <div className="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
