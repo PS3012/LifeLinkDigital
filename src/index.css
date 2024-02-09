@@ -607,3 +607,23 @@ h6,
 .slider-next-arrow {
   right: 10px;
 }
+
+
+/* list slide */
+
+/* Define animation */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Apply animation to list items */
+.list-item-animation {
+  animation: slideInFromLeft 0.5s ease-out forwards;
+}

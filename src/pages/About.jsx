@@ -1,9 +1,43 @@
+import { useEffect, useRef } from "react";
 import BreadCrumb from "../components/BreadCrumb";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faCheck, faUsers } from "@fortawesome/free-solid-svg-icons";
 // import { faFacebookF, faInstagram, faLinkedinIn, faTwitter } from "@fortawesome/free-brands-svg-icons";
 
 function About() {
+const listRefs = useRef([]);
+
+  useEffect(() => {
+      if (listRefs.current) {
+        
+      }
+    const observers = [];
+
+    listRefs.current.forEach((listRef) => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const listItems = listRef.current.querySelectorAll(".list-group-item");
+            listItems.forEach((item) => {
+              item.classList.add("list-item-animation");
+            });
+            observer.unobserve(entry.target);
+          }
+        });
+      });
+
+      if (listRef.current) {
+        observer.observe(listRef.current);
+      }
+      observers.push(observer);
+    
+    });
+
+    return () => {
+      observers.forEach((observer) => observer.disconnect());
+    };
+  }, [listRefs]);
+
   return (
     <>
       <BreadCrumb page="About Us" />
@@ -30,7 +64,12 @@ function About() {
               </div>
               <p className="mb-4"></p>
               <div className="content_container">
-                <ul className="list-group">
+                <ul className="list-group" ref={(ref) => listRefs.current.push(ref)}>
+                  <li className="list-group-item">
+                    <b> AI-driven insights: </b>
+                    Leverage artificial intelligence to analyze pharmaceutical data, predict trends, and optimize
+                    decision-making processes, enhancing efficiency and innovation in drug development and patient care.
+                  </li>
                   <li className="list-group-item">
                     <b>Data integrity and quality management</b>
                     Ensure data accuracy and traceability across your entire workflow with our data management
@@ -66,7 +105,7 @@ function About() {
               {/* <div className="btn btn-sm border rounded-pill text-primary px-3 mb-3">About Us</div> */}
               <h3 className="mb-4">By partnering with Lifelink Digital, you can:</h3>
               <div className="content_container">
-                <ul className="list-group">
+                <ul className="list-group" ref={(ref) => listRefs.current.push(ref)}>
                   <li className="list-group-item">
                     <b> Reduce costs and improve efficiency </b>
                     Eliminate manual processes and centralize data management for significant cost savings and increased
@@ -129,14 +168,14 @@ function About() {
                 <h3 className="mb-4">By partnering with Lifelink Digital, you can:</h3>
               </h3>
               <div className="content_container">
-                <ul className="list-group">
+                <ul className="list-group" ref={(ref) => listRefs.current.push(ref)}>
                   <li className="list-group-item">
                     <b> Customer Focus: </b>We understand that our success depends on the success of our customers. We
                     are committed to listening to their needs and exceeding their expectations.
                   </li>
                   <li className="list-group-item">
-                    <b> • Quality by Design: </b>We build quality into our products and services from the very
-                    beginning. We use a risk-based approach to identify and mitigate potential quality problems.
+                    <b> Quality by Design: </b>We build quality into our products and services from the very beginning.
+                    We use a risk-based approach to identify and mitigate potential quality problems.
                   </li>
                   <li className="list-group-item">
                     <b> Continuous Improvement: </b>We are committed to continually improving our products, services,
@@ -168,7 +207,7 @@ function About() {
               {/* <div className="btn btn-sm border rounded-pill text-primary px-3 mb-3">About Us</div> */}
               <h3 className="mb-4">To achieve these goals, we will:</h3>
               <div className="content_container">
-                <ul className="list-group">
+                <ul className="list-group" ref={(ref) => listRefs.current.push(ref)}>
                   <li className="list-group-item">
                     Implement and maintain a documented QMS that meets the requirements of relevant GxP regulations and
                     industry standards.
@@ -177,7 +216,7 @@ function About() {
                     Conduct regular risk assessments to identify and mitigate potential quality problems.
                   </li>
                   <li className="list-group-item">
-                    • Conduct regular training for our employees on quality principles and procedures.
+                    Conduct regular training for our employees on quality principles and procedures.
                   </li>
 
                   <li className="list-group-item">
