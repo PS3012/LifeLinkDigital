@@ -8,7 +8,62 @@ function Contact() {
             <BreadCrumb page="Contact Us" />
 
             {/* <!-- Contact Start --> */}
-            <div className="container-fluid py-5">
+            <div className="container-fluid section2  py-5">
+                <div className="container">
+                    <div className="row g-5 align-items-center d-flex">
+                        <div className="col-lg-5 wow fadeIn" data-wow-delay="0.2s">
+                            <div className="abouts">
+                                <img className="img-fluid" src="/phone.jpeg" />
+                            </div>
+                        </div>
+                        <div className="container-fluid py-5 col-lg-7">
+                            <div className="container py-5">
+                                <div className="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style={{ 'max-width': '500px' }}>
+                                    <h1 className="mb-4">If You Have Any Query, Please Contact Us</h1>
+                                </div>
+                                <div className="row justify-content-center">
+                                    <div className="col-lg-7">
+                                        <div className="wow fadeIn" data-wow-delay="0.3s">
+                                            <form>
+                                                <div className="row g-3">
+                                                    <div className="col-md-6">
+                                                        {/* <div className="form-floating"> */}
+                                                            <input type="text" className="form-control" id="contact-form-border" placeholder="Your Name" />
+                                                            {/* <label htmlFor="name">Your Name</label> */}
+                                                        {/* </div> */}
+                                                    </div>
+                                                    <div className="col-md-6">
+                                                        {/* <div className="form-floating"> */}
+                                                            <input type="email" id="contact-form-border" className="form-control" placeholder="Your Email" />
+                                                            {/* <label htmlFor="email">Your Email</label> */}
+                                                        {/* </div> */}
+                                                    </div>
+                                                    <div className="col-12">
+                                                        {/* <div className="form-floating"> */}
+                                                            <input type="text" className="form-control" id="contact-form-border" placeholder="Subject" />
+                                                            {/* <label htmlFor="subject">Subject</label> */}
+                                                        {/* </div> */}
+                                                    </div>
+                                                    <div className="col-12">
+                                                        {/* <div className="form-floating"> */}
+                                                            <textarea className="form-control" placeholder="Leave a message here" id="contact-form-border" style={{ 'height': '100px' }}></textarea>
+                                                            {/* <label htmlFor="message">Message</label> */}
+                                                        {/* </div> */}
+                                                    </div>
+                                                    <div className="col-12">
+                                                        <button id="btn-theme" className="btn btn-primary w-100 py-2" type="submit">Send Message</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {/* <div className="container-fluid py-5">
                 <div className="container py-5">
                     <div className="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style={{ 'max-width': '500px' }}>
                         <div className="btn btn-sm border rounded-pill text-primary px-3 mb-3">Contact Us</div>
@@ -55,7 +110,7 @@ function Contact() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
             {/* <!-- Contact End --> */}
 
         </>

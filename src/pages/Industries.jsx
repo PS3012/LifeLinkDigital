@@ -47,7 +47,7 @@ function Industries() {
                     <div className="row g-5 align-items-center">
                         <div className="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                             {/* <div className="btn btn-sm border rounded-pill text-primary px-3 mb-3">About Us</div> */}
-                            <h3 className="mb-4">Here's how our industry knowledge benefits your organization:</h3>
+                            <h3 className="mb-4"> Here`s how our industry knowledge benefits your organization:</h3>
                             <div className="content_container">
                                 <ul className="list-group">
                                     <li className="list-group-item">
