@@ -10,13 +10,13 @@ function BreadCrumb(_props) {
                 <div className="container pt-5">
                     <div className="row g-5 pt-5">
                         <div className="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
-                            <h1 className="display-4 text-white mb-4 animated slideInRight">{_props.page}</h1>
+                            <h1 className="display-4 text-dark mb-4 animated slideInRight">{_props.page}</h1>
                             <nav aria-label="breadcrumb">
                                 <ol className="breadcrumb justify-content-center justify-content-lg-start mb-0">
                                     <li className="breadcrumb-item">
-                                        <Link className="text-white" to="#">Home</Link>
+                                        <Link className="text-dark" to="#">Home</Link>
                                     </li>
-                                    <li className="breadcrumb-item text-white active" aria-current="page">{_props.page}</li>
+                                    <li className="breadcrumb-item text-dark active" aria-current="page">{_props.page}</li>
                                 </ol>
                             </nav>
                         </div>
