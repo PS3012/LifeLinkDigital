@@ -386,14 +386,13 @@ h6,
 
 /*** Footer ***/
 .footer {
-  height: 35rem;
   background-size: contain;
   background: url(../footer.png) center center no-repeat;
 }
 
 .footer .btn.btn-social {
   width: 40px;
-  /* height: 40px; */
+  height: 40px;
   display: flex;
   transition: 0.3s;
   margin-right: 5px;
@@ -430,7 +429,7 @@ h6,
 }
 
 .footer .copyright {
-  padding: 20px 0;
+  padding: 25px 0;
   font-size: 14px;
   border-top: 1px solid rgba(256, 256, 256, 0.1);
 }
