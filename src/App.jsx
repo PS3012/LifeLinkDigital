@@ -28,6 +28,7 @@ import GxpSystems from "./pages/services/GxpSystems";
 import IntelligentPharma from "./pages/services/IntelligentPharma";
 import GxpTrainig from "./pages/services/GxpTraining";
 import Rpa from "./pages/services/Rpa";
+// import "swiper/swiper-bundle.min.css";
 
 function App() {
   return (
