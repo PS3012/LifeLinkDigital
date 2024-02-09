@@ -386,7 +386,7 @@ h6,
 
 /*** Footer ***/
 .footer {
-  height: 35rem;
+  /* height: 35rem; */
   background-size: contain;
   background: url(../footer.png) center center no-repeat;
 }
@@ -494,10 +494,10 @@ h6,
 }
 .card-section {
   background-color: #0abde3;
+
 }
 .card-expertise {
   background-color: #0abde3;
-
   box-shadow: -13px -13px 26px #089bba, 13px 13px 26px #0cdfff;
 }
 .expertise-cards {
@@ -570,6 +570,12 @@ h6,
 }
 .section2 {
   background: linear-gradient(#80ffdb, #5390d9);
+}
+#contact-form-border{
+border-bottom: 2px solid;
+}
+#btn-theme{
+  border-radius: 30px;
 }
 
 /* ////////// */
