@@ -612,18 +612,14 @@ h6,
 /* list slide */
 
 /* Define animation */
-@keyframes slideInFromLeft {
-  0% {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
+.list-group {
+  /* max-width: 0; */
+  overflow: hidden;
+  transition: max-width 0.5s ease;
 }
 
-/* Apply animation to list items */
-.list-item-animation {
-  animation: slideInFromLeft 0.5s ease-out forwards;
+.list-group.visible {
+  max-width: 100%; /* Change this value according to your desired width */
+  background-color: black;
+
 }
