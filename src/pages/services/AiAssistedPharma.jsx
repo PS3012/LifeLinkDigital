@@ -15,44 +15,58 @@ export default function AiAssistedPharma() {
         </p>
       </div>
 
-      <h4 className="why_line">The AI-Assisted Pharma 4.0 Elixir:</h4>
-      <div className="content_container">
-        <ul>
-          <li>
-            <b>What is it?</b>
-            It's the convergence of Pharma 4.0 principles (digitization, connectivity, automation) with Artificial
-            Intelligence. Think of it as a smart factory powered by machine learning and algorithms, learning from vast
-            data sets to make smarter decisions.
-          </li>
-          <li>
-            <b>Why is it the secret ingredient? </b>Because it offers a powerful blend of benefits:
-            <ul>
-              <li>
-                <b>Optimized processes:</b> AI analyzes data in real-time, predicting and preventing deviations, leading
-                to smoother production and reduced waste.
-              </li>
-              <li>
-                <b> Quality control boost:</b>
-                AI algorithms can detect subtle anomalies in product data, catching quality issues early on, ensuring
-                safety and efficacy.{" "}
-              </li>
-              <li>
-                <b> Drug discovery acceleration:</b>
-                AI can analyze massive datasets, identifying promising drug candidates faster and with higher accuracy.{" "}
-              </li>
-              <li>
-                <b>Personalized medicine: </b>
-                AI can analyze patient data to develop more targeted and effective treatments, ushering in an era of
-                precision medicine.{" "}
-              </li>
-              <li>
-                <b>Predictive maintenance: </b> AI can predict equipment failures, minimizing downtime and maximizing
-                production efficiency.
-              </li>
-            </ul>
-          </li>
-        </ul>
+      <div className="container-fluid section2 py-5">
+        <div className="container">
+          <div className="row g-5 align-items-center">
+            <div className="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+              <div className="abouts">
+                <img className="img-fluid" src="/Doctor.jpeg" />
+              </div>
+            </div>
+            <div className="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+              <h4 className="why_line">The AI-Assisted Pharma 4.0 Elixir:</h4>
+              <div className="content_container">
+                <ul>
+                  <li>
+                    <b>What is it?</b>
+                    It's the convergence of Pharma 4.0 principles (digitization, connectivity, automation) with Artificial
+                    Intelligence. Think of it as a smart factory powered by machine learning and algorithms, learning from vast
+                    data sets to make smarter decisions.
+                  </li>
+                  <li>
+                    <b>Why is it the secret ingredient? </b>Because it offers a powerful blend of benefits:
+                    <ul>
+                      <li>
+                        <b>Optimized processes:</b> AI analyzes data in real-time, predicting and preventing deviations, leading
+                        to smoother production and reduced waste.
+                      </li>
+                      <li>
+                        <b> Quality control boost:</b>
+                        AI algorithms can detect subtle anomalies in product data, catching quality issues early on, ensuring
+                        safety and efficacy.{" "}
+                      </li>
+                      <li>
+                        <b> Drug discovery acceleration:</b>
+                        AI can analyze massive datasets, identifying promising drug candidates faster and with higher accuracy.{" "}
+                      </li>
+                      <li>
+                        <b>Personalized medicine: </b>
+                        AI can analyze patient data to develop more targeted and effective treatments, ushering in an era of
+                        precision medicine.{" "}
+                      </li>
+                      <li>
+                        <b>Predictive maintenance: </b> AI can predict equipment failures, minimizing downtime and maximizing
+                        production efficiency.
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+     
       <div className="middle_line_container">
         <h6 className="middle_line">
           <b>The bottom line:</b> AI-Assisted Pharma 4.0 is not just a technology trend; it's a strategic shift towards

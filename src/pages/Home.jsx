@@ -7,6 +7,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faFacebookF, faInstagram, faLinkedinIn, faTwitter } from "@fortawesome/free-brands-svg-icons"
 import { faArrowRight, faBrain, faCheck, faGraduationCap, faPowerOff, faRobot, faUsers } from "@fortawesome/free-solid-svg-icons"
+import { Link } from 'react-router-dom';
 
 function Home() {
     return (
@@ -15,7 +16,7 @@ function Home() {
             {/* <!-- Hero Start --> */}
             <div className="container-fluid pt-5  hero-header mb-5">
                 <div className="container pt-5"
-             
+
                 >
                     <div className="row g-5 pt-5">
                         <div className="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
@@ -23,7 +24,8 @@ function Home() {
                             <h1 className="display-4 text-dark mb-4 animated slideInRight">Artificial Intelligence for Your Business</h1>
                             <p className="text-dark mb-4 animated slideInRight">Empowering Your Business with Intelligent Solutions: Harness the Power of Artificial Intelligence to Optimize, Innovate, and Excel in the Digital Era.</p>
                             <a href="" className="btn btn-dark py-sm-3 px-sm-5 rounded-pill me-3 animated slideInRight">Read More</a>
-                            <a href="" className="btn btn-outline-dark py-sm-3 px-sm-5 rounded-pill animated slideInRight">Contact Us</a>
+                            <Link to='/contact'>
+                                <a href="" className="btn btn-outline-dark py-sm-3 px-sm-5 rounded-pill animated slideInRight">Contact Us</a></Link>
                         </div>
                         <div className="col-lg-6 align-self-end text-center text-lg-end">
                             <img className="img-head " src="/3dd.png" alt="" />

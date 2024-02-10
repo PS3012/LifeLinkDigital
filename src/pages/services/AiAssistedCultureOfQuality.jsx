@@ -15,45 +15,59 @@ export default function AiAssistedCultureOfQuality() {
           </p>
         </div>
 
-        <h4 className="why_line">The AI-Assisted Quality Culture Potion:</h4>
-        <div className="content_container">
-          <ul>
-            <li>
-              <b>What is it?</b>
-              It's about integrating Artificial Intelligence into your existing quality management systems, fostering a
-              collaborative environment where data-driven insights guide decision-making and every employee becomes a
-              quality champion.
-            </li>
-            <li>
-              <b>Why is it the ultimate quality booster?</b>Because it offers a potent blend of benefits:
-              <ul>
-                <li>
-                  <b>Predictive Quality Control: </b> AI analyzes vast datasets to identify potential quality risks
-                  before they occur, enabling proactive interventions and prevention.
-                </li>
-                <li>
-                  <b> Continuous Improvement Catalyst:</b>
-                  AI helps analyze quality data to uncover patterns and trends, pinpointing areas for improvement and
-                  optimizing processes continuously.
-                </li>
-                <li>
-                  <b> Risk Management with Bite:</b>
-                  AI algorithms can predict and assess potential quality risks, allowing for data-driven risk mitigation
-                  strategies.{" "}
-                </li>
-                <li>
-                  <b>Empowered Workforce: </b>
-                  AI provides real-time insights and recommendations to your team, empowering them to make informed
-                  quality decisions.
-                </li>
-                <li>
-                  <b>Culture Shift Champion:</b> AI fosters a data-driven approach to quality, promoting transparency,
-                  accountability, and a shared commitment to excellence.
-                </li>
-              </ul>
-            </li>
-          </ul>
+        <div className="container-fluid section2 py-5">
+          <div className="container">
+            <div className="row g-5 align-items-center">
+              <div className="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                <div className="abouts">
+                  <img className="img-fluid" src="/Doctor.jpeg" />
+                </div>
+              </div>
+              <div className="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                <h4 className="why_line">The AI-Assisted Quality Culture Potion:</h4>
+                <div className="content_container">
+                  <ul>
+                    <li>
+                      <b>What is it?</b>
+                      It's about integrating Artificial Intelligence into your existing quality management systems, fostering a
+                      collaborative environment where data-driven insights guide decision-making and every employee becomes a
+                      quality champion.
+                    </li>
+                    <li>
+                      <b>Why is it the ultimate quality booster?</b>Because it offers a potent blend of benefits:
+                      <ul>
+                        <li>
+                          <b>Predictive Quality Control: </b> AI analyzes vast datasets to identify potential quality risks
+                          before they occur, enabling proactive interventions and prevention.
+                        </li>
+                        <li>
+                          <b> Continuous Improvement Catalyst:</b>
+                          AI helps analyze quality data to uncover patterns and trends, pinpointing areas for improvement and
+                          optimizing processes continuously.
+                        </li>
+                        <li>
+                          <b> Risk Management with Bite:</b>
+                          AI algorithms can predict and assess potential quality risks, allowing for data-driven risk mitigation
+                          strategies.{" "}
+                        </li>
+                        <li>
+                          <b>Empowered Workforce: </b>
+                          AI provides real-time insights and recommendations to your team, empowering them to make informed
+                          quality decisions.
+                        </li>
+                        <li>
+                          <b>Culture Shift Champion:</b> AI fosters a data-driven approach to quality, promoting transparency,
+                          accountability, and a shared commitment to excellence.
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+
 
         <div className="middle_line_container">
           <h6 className="middle_line">
