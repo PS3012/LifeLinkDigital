@@ -37,7 +37,7 @@ function Footer() {
               </p>
               <p>
                 <FontAwesomeIcon icon={faPhone} className="me-3" />
-                +012 345 67890
+                +91-8821836528
               </p>
               <p>
                 <FontAwesomeIcon icon={faEnvelopeOpenText} className="me-3" />
