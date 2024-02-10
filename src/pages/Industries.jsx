@@ -3,8 +3,8 @@ import BreadCrumb from "../components/BreadCrumb"
 function Industries() {
     return (
         <>
-            <BreadCrumb page="Industries" />
-            {/* <!-- About Start --> */}
+            `            <BreadCrumb page="Industries" />
+            `            {/* <!-- About Start --> */}
             <div className="container-fluid section2  py-5">
                 <div className="container">
                     <div className="row g-5 align-items-center">

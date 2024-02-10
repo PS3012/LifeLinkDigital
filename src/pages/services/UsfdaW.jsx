@@ -1,8 +1,7 @@
-import React from "react";
 
 export default function UsfdaW() {
   return (
-    <div className="top_container m-5">
+    <div className="top_container m-3">
       <div className="service_headingr">
         <h1 className="heading">USFDA Warning Letter Management</h1>
       </div>
@@ -15,43 +14,56 @@ export default function UsfdaW() {
         </p>
       </div>
 
-      <h4 className="why_line">The Warning Letter Management Potion:</h4>
-      <div className="content_container">
-        <ul>
-          <li>
-            <b>What is it ? </b>
-            It's a systematic approach to responding to, addressing, and preventing future USFDA Warning Letters. Think
-            of it as a multi-step process to understand the issues, implement corrective actions, and demonstrate
-            sustained compliance.
-          </li>
-          <li>
-            <b>Why is it essential ? </b> Because it offers a powerful blend of benefits:
-            <ul>
-              <li>
-                <b>Compliance clarity:</b> Gain a clear understanding of the violations cited in the letter and their
-                potential impact.
-              </li>
-              <li>
-                <b>Prompt response:</b>
-                Develop a comprehensive and timely response plan that addresses the FDA's concerns head-on.{" "}
-              </li>
-              <li>
-                <b>Corrective action magic:</b>
-                Implement effective and sustainable corrective actions (CAPAs) to prevent similar issues from arising
-                again.
-              </li>
-              <li>
-                <b>Preventative measures:</b>
-                Identify and address systemic root causes to prevent future violations and build a culture of
-                compliance.{" "}
-              </li>
-              <li>
-                <b>Proactive communication: </b> Maintain open and transparent communication with the FDA throughout the
-                process, demonstrating your commitment to improvement.
-              </li>
-            </ul>
-          </li>
-        </ul>
+      <div className="container-fluid section2 py-5">
+        <div className="container">
+          <div className="row g-5 align-items-center">
+            <div className="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+              <div className="abouts">
+                <img className="img-fluid" src="/Doctor.jpeg" />
+              </div>
+            </div>
+            <div className="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+              <h4 className="why_line">The Warning Letter Management Potion:</h4>
+              <div className="content_container">
+                <ul>
+                  <li>
+                    <b>What is it ? </b>
+                    It's a systematic approach to responding to, addressing, and preventing future USFDA Warning Letters. Think
+                    of it as a multi-step process to understand the issues, implement corrective actions, and demonstrate
+                    sustained compliance.
+                  </li>
+                  <li>
+                    <b>Why is it essential ? </b> Because it offers a powerful blend of benefits:
+                    <ul>
+                      <li>
+                        <b>Compliance clarity:</b> Gain a clear understanding of the violations cited in the letter and their
+                        potential impact.
+                      </li>
+                      <li>
+                        <b>Prompt response:</b>
+                        Develop a comprehensive and timely response plan that addresses the FDA's concerns head-on.{" "}
+                      </li>
+                      <li>
+                        <b>Corrective action magic:</b>
+                        Implement effective and sustainable corrective actions (CAPAs) to prevent similar issues from arising
+                        again.
+                      </li>
+                      <li>
+                        <b>Preventative measures:</b>
+                        Identify and address systemic root causes to prevent future violations and build a culture of
+                        compliance.{" "}
+                      </li>
+                      <li>
+                        <b>Proactive communication: </b> Maintain open and transparent communication with the FDA throughout the
+                        process, demonstrating your commitment to improvement.
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div className="middle_line_container">

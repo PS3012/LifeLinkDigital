@@ -19,45 +19,59 @@ export default function GxpSystems() {
           </p>
         </div>
 
-        <h4 className="why_line">The Connected & Integrated GXP Systems Elixir:</h4>
-        <div className="content_container">
-          <ul>
-            <li>
-              <b>What is it?</b>
-              It's about breaking down data walls between your GxP systems, like LIMS, MES, QMS, and DMS, enabling them
-              to communicate and share data seamlessly. Think of it as an orchestrated flow of information that fuels
-              efficient operations and regulatory compliance.
-            </li>
-            <li>
-              <b>Why is it the key to success? </b>Because it offers a powerful blend of benefits:
-              <ul>
-                <li>
-                  <b> Compliance made easy:</b>
-                  Effortlessly track data provenance across systems, ensuring audit-ready trails and simplified
-                  compliance demonstrations.
-                </li>
-                <li>
-                  <b>Efficiency boost: </b> Automate manual data transfer tasks, freeing up valuable time and resources
-                  for your team.
-                </li>
-                <li>
-                  <b> Real-time insights: </b>
-                  Gain a holistic view of your operations by analyzing data from all interconnected systems, enabling
-                  faster and more informed decision-making.
-                </li>
-                <li>
-                  <b>Risk management magic: </b>
-                  Proactively identify potential issues by correlating data across systems, leading to reduced risks and
-                  improved product quality.
-                </li>
-                <li>
-                  <b>Continuous improvement:</b> Analyze data from all stages of the manufacturing process to pinpoint
-                  areas for improvement, leading to optimized processes and enhanced efficiency.
-                </li>
-              </ul>
-            </li>
-          </ul>
+        <div className="container-fluid section2 py-5">
+          <div className="container">
+            <div className="row g-5 align-items-center">
+              <div className="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                <div className="abouts">
+                  <img className="img-fluid" src="/Doctor.jpeg" />
+                </div>
+              </div>
+              <div className="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                <h4 className="why_line">The Connected & Integrated GXP Systems Elixir:</h4>
+                <div className="content_container">
+                  <ul>
+                    <li>
+                      <b>What is it?</b>
+                      It's about breaking down data walls between your GxP systems, like LIMS, MES, QMS, and DMS, enabling them
+                      to communicate and share data seamlessly. Think of it as an orchestrated flow of information that fuels
+                      efficient operations and regulatory compliance.
+                    </li>
+                    <li>
+                      <b>Why is it the key to success? </b>Because it offers a powerful blend of benefits:
+                      <ul>
+                        <li>
+                          <b> Compliance made easy:</b>
+                          Effortlessly track data provenance across systems, ensuring audit-ready trails and simplified
+                          compliance demonstrations.
+                        </li>
+                        <li>
+                          <b>Efficiency boost: </b> Automate manual data transfer tasks, freeing up valuable time and resources
+                          for your team.
+                        </li>
+                        <li>
+                          <b> Real-time insights: </b>
+                          Gain a holistic view of your operations by analyzing data from all interconnected systems, enabling
+                          faster and more informed decision-making.
+                        </li>
+                        <li>
+                          <b>Risk management magic: </b>
+                          Proactively identify potential issues by correlating data across systems, leading to reduced risks and
+                          improved product quality.
+                        </li>
+                        <li>
+                          <b>Continuous improvement:</b> Analyze data from all stages of the manufacturing process to pinpoint
+                          areas for improvement, leading to optimized processes and enhanced efficiency.
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+
 
         <div className="middle_line_container">
           <h6 className="middle_line">
