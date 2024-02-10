@@ -386,13 +386,14 @@ h6,
 
 /*** Footer ***/
 .footer {
+  /* height: 35rem; */
   background-size: contain;
   background: url(../footer.png) center center no-repeat;
 }
 
 .footer .btn.btn-social {
   width: 40px;
-  height: 40px;
+  /* height: 40px; */
   display: flex;
   transition: 0.3s;
   margin-right: 5px;
@@ -429,7 +430,7 @@ h6,
 }
 
 .footer .copyright {
-  padding: 25px 0;
+  padding: 20px 0;
   font-size: 14px;
   border-top: 1px solid rgba(256, 256, 256, 0.1);
 }
@@ -492,11 +493,11 @@ h6,
   height: 500px;
 }
 .card-section {
-  background-color: #0abde3;
+  background: linear-gradient(#80ffdb, #5390d9);
 }
 .card-expertise {
-  background-color: #0abde3;
-
+  /* background-color: #0abde3; */
+  background-color: white;
   box-shadow: -13px -13px 26px #089bba, 13px 13px 26px #0cdfff;
 }
 .expertise-cards {
@@ -509,6 +510,7 @@ h6,
   width: 320px;
   height: 430px;
   background: #0abde3;
+  background: white;
   border-top-right-radius: 10px;
   overflow: hidden;
   display: flex;
@@ -569,4 +571,59 @@ h6,
 }
 .section2 {
   background: linear-gradient(#80ffdb, #5390d9);
+}
+#contact-form-border {
+  border-bottom: 2px solid;
+}
+#btn-theme {
+  border-radius: 30px;
+}
+
+/* ////////// */
+.sliderImage {
+  height: 700px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: -5px -5px 9px rgba(204, 203, 203, 0.45), 5px 5px 9px rgba(85, 94, 109, 0.3);
+}
+.slider-container {
+  margin: 0;
+}
+
+/* styles for slider arroww*/
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.slider-prev-arrow {
+  left: 10%;
+}
+
+.slider-next-arrow {
+  right: 10px;
+}
+
+
+/* list slide */
+
+/* Define animation */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Apply animation to list items */
+.list-item-animation {
+  animation: slideInFromLeft 0.5s ease-out forwards;
 }

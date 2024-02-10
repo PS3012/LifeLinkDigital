@@ -6,31 +6,8 @@ import { faAngleRight, faEnvelopeOpenText, faPhone, faSignsPost } from "@fortawe
 function Footer() {
   return (
     <>
-      {/* <!-- Newsletter Start --> */}
-      {/* <div className="container-fluid bg-themeColor newsletter py-5">
-                <div className="container">
-                    <div className="row g-5 align-items-center">
-                        <div className="col-md-5 ps-lg-0 pt-5 pt-md-0 text-start wow fadeIn" data-wow-delay="0.3s">
-                            <img className="img-fluid" src="/newsletter.png" alt="" />
-                        </div>
-                        <div className="col-md-7 py-5 newsletter-text wow fadeIn" data-wow-delay="0.5s">
-                            <div className="btn btn-sm border rounded-pill text-white px-3 mb-3">Newsletter</div>
-                            <h1 className="text-white mb-4">Let&lsquo;s subscribe the newsletter</h1>
-                            <div className="position-relative w-100 mt-3 mb-2">
-                                <input className="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text"
-                                    placeholder="Enter Your Email" style={{ 'height': '48px' }} />
-                                <button type="button" className="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i
-                                    className="fa fa-paper-plane text-primary fs-4"></i></button>
-                            </div>
-                            <small className="text-white-50">Diam sed sed dolor stet amet eirmod</small>
-                        </div>
-                    </div>
-                </div>
-            </div> */}
-      {/* <!-- Newsletter End --> */}
-
       {/* <!-- Footer Start --> */}
-      <div className="container-fluid bg-dark text-white-50 footer pt-1">
+      <div className="container-fluid bg-dark text-white-50 footer py-3">
         <div className="container py-5">
           <div className="row g-5">
             <div className="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
@@ -39,13 +16,13 @@ function Footer() {
                   LifeLink<span className="text-primary"></span>Digital
                 </h1>
               </a>
-              <p className="mb-0">
+              <p className="mb-0 style={{ fontSize: '14px' }}>">
                 Empowering Your Business with Intelligent Solutions: Harness the Power of Artificial Intelligence to
                 Optimize, Innovate, and Excel in the Digital Era.
               </p>
             </div>
             <div className="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
-              <h5 className="text-white mb-4">Get In Touch</h5>
+              <h5 className="text-white mb-1">Get In Touch</h5>
               <p>
                 <FontAwesomeIcon icon={faSignsPost} className="me-3" />
                 Europe Office: Ellisa Tower, EH10 4BF 44/46 MORNINGSIDE ROAD, EDINBURGH
@@ -60,7 +37,7 @@ function Footer() {
               </p>
               <p>
                 <FontAwesomeIcon icon={faPhone} className="me-3" />
-                +012 345 67890
+                +91-8821836528
               </p>
               <p>
                 <FontAwesomeIcon icon={faEnvelopeOpenText} className="me-3" />
