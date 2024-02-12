@@ -1,5 +1,7 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import BreadCrumb from "../components/BreadCrumb";
+import { useInView } from "react-intersection-observer";
+import VisibilitySensor from "react-visibility-sensor";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faCheck, faUsers } from "@fortawesome/free-solid-svg-icons";
 // import { faFacebookF, faInstagram, faLinkedinIn, faTwitter } from "@fortawesome/free-brands-svg-icons";
@@ -63,8 +65,9 @@ function About() {
                 </p>
               </div>
               <p className="mb-4"></p>
+
               <div className="content_container">
-                <ul className="list-group" ref={(ref) => listRefs.current.push(ref)}>
+                <ul className="list-group">
                   <li className="list-group-item">
                     <b> AI-driven insights: </b>
                     Leverage artificial intelligence to analyze pharmaceutical data, predict trends, and optimize
@@ -105,7 +108,7 @@ function About() {
               {/* <div className="btn btn-sm border rounded-pill text-primary px-3 mb-3">About Us</div> */}
               <h3 className="mb-4">By partnering with Lifelink Digital, you can:</h3>
               <div className="content_container">
-                <ul className="list-group" ref={(ref) => listRefs.current.push(ref)}>
+                <ul className="list-group">
                   <li className="list-group-item">
                     <b> Reduce costs and improve efficiency </b>
                     Eliminate manual processes and centralize data management for significant cost savings and increased
@@ -168,7 +171,7 @@ function About() {
                 <h3 className="mb-4">By partnering with Lifelink Digital, you can:</h3>
               </h3>
               <div className="content_container">
-                <ul className="list-group" ref={(ref) => listRefs.current.push(ref)}>
+                <ul className="list-group">
                   <li className="list-group-item">
                     <b> Customer Focus: </b>We understand that our success depends on the success of our customers. We
                     are committed to listening to their needs and exceeding their expectations.
@@ -207,7 +210,7 @@ function About() {
               {/* <div className="btn btn-sm border rounded-pill text-primary px-3 mb-3">About Us</div> */}
               <h3 className="mb-4">To achieve these goals, we will:</h3>
               <div className="content_container">
-                <ul className="list-group" ref={(ref) => listRefs.current.push(ref)}>
+                <ul className="list-group">
                   <li className="list-group-item">
                     Implement and maintain a documented QMS that meets the requirements of relevant GxP regulations and
                     industry standards.
