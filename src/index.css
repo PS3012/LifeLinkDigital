@@ -430,7 +430,7 @@ h6,
 }
 
 .footer .copyright {
-  padding: 20px 0;
+  padding-top: 10px;
   font-size: 14px;
   border-top: 1px solid rgba(256, 256, 256, 0.1);
 }
@@ -564,10 +564,20 @@ h6,
 }
 .abouts img {
   border-radius: 15px 50px;
-
   height: 550px;
   width: 550px;
   box-shadow: -5px -5px 9px rgba(204, 203, 203, 0.45), 5px 5px 9px rgba(85, 94, 109, 0.3);
+  
+}
+
+.aboutsimg img{
+  box-shadow: -5px -5px 9px rgba(204, 203, 203, 0.45), 5px 5px 9px rgba(85, 94, 109, 0.3);
+  border-radius: 15px 50px;
+
+}
+.about-images img{
+  height: 490px;
+ 
 }
 .section2 {
   background: linear-gradient(#80ffdb, #5390d9);
@@ -621,5 +631,9 @@ h6,
 .list-group.visible {
   max-width: 100%; /* Change this value according to your desired width */
   background-color: black;
+
+}
+.footer-section{
+padding-left: 80px;
 
 }
