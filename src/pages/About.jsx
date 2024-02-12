@@ -5,12 +5,12 @@ import BreadCrumb from "../components/BreadCrumb";
 // import { faFacebookF, faInstagram, faLinkedinIn, faTwitter } from "@fortawesome/free-brands-svg-icons";
 
 function About() {
-const listRefs = useRef([]);
+  const listRefs = useRef([]);
 
   useEffect(() => {
-      if (listRefs.current) {
-        
-      }
+    if (listRefs.current) {
+      ""
+    }
     const observers = [];
 
     listRefs.current.forEach((listRef) => {
@@ -30,7 +30,7 @@ const listRefs = useRef([]);
         observer.observe(listRef.current);
       }
       observers.push(observer);
-    
+
     });
 
     return () => {
@@ -247,223 +247,132 @@ const listRefs = useRef([]);
           </div>
         </div>
       </div>
-      {/* <!-- Feature Start --> */}
-      {/* <div className="card-section container-fluid pt-5 pb-5">
-        <div className="container pt-5 pb-5">
-          <div className="row g-5">
-            <div className="ms-3">
-              <h2 className="text-center">Our Expertise</h2>
-            </div>
-            <div className="expertise-cards">
-              <div className="card-expertise">
-                <div className="img-card">
-                  <img
-                    src="https://cdn3d.iconscout.com/3d/premium/thumb/web-development-5374063-4496032.png?f=webp"
-                    alt=""
-                    className="card-img"
-                  />
-                </div>
-                <div className="card-pera">
-                  <div className="software">Software Development</div>
-                  <div className="software-pera">
-                    {" "}
-                    Our team of seasoned developers is adept at creating scalable, efficient, and secure software
-                    applications tailored to your specifications.
-                  </div>
-                </div>
-              </div>
-              <div className="card-expertise">
-                <div className="img-card">
-                  <img
-                    src="https://cdn3d.iconscout.com/3d/premium/thumb/web-security-5617614-4674325.png?f=webp"
-                    alt=""
-                    className="card-img"
-                  />
-                </div>
-                <div className="card-pera">
-                  <div className="software">Web Design</div>
-                  <div className=" software-pera">
-                    {" "}
-                    Our web design services focus on creating responsive, user-friendly,robust backends with the latest
-                    web technologies, and visually captivating websites.
-                  </div>
-                </div>
-              </div>{" "}
-              <div className="card-expertise">
-                <div className="img-card">
-                  <img
-                    src="https://cdn3d.iconscout.com/3d/premium/thumb/online-pharmacy-9711183-7909752.png"
-                    alt=""
-                    className="card-img"
-                  />
-                </div>
-                <div className="card-pera">
-                  <div className="software">Pharma Digitization</div>
-                  <div className="software-pera">
-                    {" "}
-                    The pharma industry faces a paradigm shift, which paves the way for more efficient, patient-centric,
-                    and data-driven approaches.
-                  </div>
-                </div>
-              </div>{" "}
-              <div className="card-expertise">
-                <div className="img-card">
-                  <img
-                    src="https://cdn3d.iconscout.com/3d/premium/thumb/ai-chip-in-hand-7356110-6020304.png?f=webp"
-                    alt=""
-                    className="card-img"
-                  />
-                </div>
-                <div className="card-pera">
-                  <div className="software">Artificial Intelligence</div>
-                  <div className=" software-pera">
-                    {" "}
-                    Embrace the future with AI solutions tailored to enhance your business operations. From machine
-                    learning algorithms to natural language processing.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
-      {/* <!-- Feature End --> */}
 
-      {/* <!-- Team Start --> */}
-      {/* <div className="container-fluid bg-light py-5">
-        <div className="container py-5">
+      <div className="container-fluid section2 py-5">
+        <div className="container">
           <div className="row g-5 align-items-center">
-            <div className="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
-              <div className="btn btn-sm border rounded-pill text-primary px-3 mb-3">
-                Our Team
+            <div className="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+              <div className="abouts">
+                <img className="img-fluid" src="/systemmanagement.jpeg" />
               </div>
-              <h1 className="mb-4">Meet Our Experienced Team Members</h1>
-              <p className="mb-4">
-                Tempor erat elitr rebum at clita. Diam dolor diam ipsum et
-                tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum
-                et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo
-                justo et tempor eirmod magna dolore erat amet
-              </p>
-              <a className="btn btn-primary rounded-pill px-4" href="">
-                Read More
-              </a>
             </div>
-            <div className="col-lg-7">
-              <div className="row g-4">
-                <div className="col-md-6">
-                  <div className="row g-4">
-                    <div className="col-12 wow fadeIn" data-wow-delay="0.1s">
-                      <div className="team-item bg-white text-center rounded p-4 pt-0">
-                        <img
-                          className="img-fluid rounded-circle p-4"
-                          src="/team-1.jpg"
-                          alt=""
-                        />
-                        <h5 className="mb-0">Boris Johnson</h5>
-                        <small>Founder & CEO</small>
-                        <div className="d-flex justify-content-center mt-3">
-                          <a className="btn btn-square btn-primary m-1" href="">
-                            <FontAwesomeIcon icon={faFacebookF} />
-                          </a>
-                          <a className="btn btn-square btn-primary m-1" href="">
-                            <FontAwesomeIcon icon={faTwitter} />
-                          </a>
-                          <a className="btn btn-square btn-primary m-1" href="">
-                            <FontAwesomeIcon icon={faInstagram} />
-                          </a>
-                          <a className="btn btn-square btn-primary m-1" href="">
-                            <FontAwesomeIcon icon={faLinkedinIn} />
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-12 wow fadeIn" data-wow-delay="0.5s">
-                      <div className="team-item bg-white text-center rounded p-4 pt-0">
-                        <img
-                          className="img-fluid rounded-circle p-4"
-                          src="/team-2.jpg"
-                          alt=""
-                        />
-                        <h5 className="mb-0">Adam Crew</h5>
-                        <small>Executive Manager</small>
-                        <div className="d-flex justify-content-center mt-3">
-                          <a className="btn btn-square btn-primary m-1" href="">
-                            <FontAwesomeIcon icon={faFacebookF} />
-                          </a>
-                          <a className="btn btn-square btn-primary m-1" href="">
-                            <FontAwesomeIcon icon={faTwitter} />
-                          </a>
-                          <a className="btn btn-square btn-primary m-1" href="">
-                            <FontAwesomeIcon icon={faInstagram} />
-                          </a>
-                          <a className="btn btn-square btn-primary m-1" href="">
-                            <FontAwesomeIcon icon={faLinkedinIn} />
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-6 pt-md-4">
-                  <div className="row g-4">
-                    <div className="col-12 wow fadeIn" data-wow-delay="0.3s">
-                      <div className="team-item bg-white text-center rounded p-4 pt-0">
-                        <img
-                          className="img-fluid rounded-circle p-4"
-                          src="/team-3.jpg"
-                          alt=""
-                        />
-                        <h5 className="mb-0">Kate Winslet</h5>
-                        <small>Co Founder</small>
-                        <div className="d-flex justify-content-center mt-3">
-                          <a className="btn btn-square btn-primary m-1" href="">
-                            <FontAwesomeIcon icon={faFacebookF} />
-                          </a>
-                          <a className="btn btn-square btn-primary m-1" href="">
-                            <FontAwesomeIcon icon={faTwitter} />
-                          </a>
-                          <a className="btn btn-square btn-primary m-1" href="">
-                            <FontAwesomeIcon icon={faInstagram} />
-                          </a>
-                          <a className="btn btn-square btn-primary m-1" href="">
-                            <FontAwesomeIcon icon={faLinkedinIn} />
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-12 wow fadeIn" data-wow-delay="0.7s">
-                      <div className="team-item bg-white text-center rounded p-4 pt-0">
-                        <img
-                          className="img-fluid rounded-circle p-4"
-                          src="/team-4.jpg"
-                          alt=""
-                        />
-                        <h5 className="mb-0">Cody Gardner</h5>
-                        <small>Project Manager</small>
-                        <div className="d-flex justify-content-center mt-3">
-                          <a className="btn btn-square btn-primary m-1" href="">
-                            <FontAwesomeIcon icon={faFacebookF} />
-                          </a>
-                          <a className="btn btn-square btn-primary m-1" href="">
-                            <FontAwesomeIcon icon={faTwitter} />
-                          </a>
-                          <a className="btn btn-square btn-primary m-1" href="">
-                            <FontAwesomeIcon icon={faInstagram} />
-                          </a>
-                          <a className="btn btn-square btn-primary m-1" href="">
-                            <FontAwesomeIcon icon={faLinkedinIn} />
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+
+            <div className="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+              {/* <div className="btn btn-sm border rounded-pill text-primary px-3 mb-3">About Us</div> */}
+              <h4 className="why_line">Mission Statement</h4>
+              <div className="paragraph_container">
+                <p className="paragraph">
+                  At Lifelink Digital, we empower the global pharmaceutical industry to achieve GxP compliance and accelerate life-saving innovations with intuitive, secure, and scalable software solutions.
+                </p>
+              </div>
+              <h3 className="mb-4">
+                {" "}
+                <h3 className="mb-4">Through our relentless dedication to:</h3>
+              </h3>
+              <div className="content_container">
+                <ul className="list-group" ref={(ref) => listRefs.current.push(ref)}>
+                  <li className="list-group-item">
+                    <b>Innovation: </b>We continuously develop cutting-edge technology that simplifies complex GxP processes, fostering agility and efficiency.
+                  </li>
+                  <li className="list-group-item">
+                    <b>Collaboration: </b>We foster partnerships with our clients, understanding their unique needs and building solutions that drive success.
+                  </li>
+                  <li className="list-group-item">
+                    <b>Compliance:</b>: We ensure our software adheres to the highest GxP standards, providing peace of mind and regulatory confidence.
+                  </li>
+
+                  <li className="list-group-item">
+                    <b>Security: </b>We protect sensitive data with robust security measures, mitigating risks and safeguarding patient safety.
+                  </li>
+                  <li className="list-group-item">
+                    <b>Scalability: </b>We design flexible solutions that adapt to your evolving needs, supporting your growth journey.
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
-      </div> */}
-      {/* <!-- Team End --> */}
+      </div>
+
+      <div className="container-fluid py-5">
+        <div className="container">
+          <div className="row g-5 align-items-center">
+            <div className="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+              <h3 className="mb-4">We strive to be the trusted partner for pharmaceutical companies worldwide, enabling them to:</h3>
+              <div className="content_container">
+                <ul className="list-group" ref={(ref) => listRefs.current.push(ref)}>
+                  <li className="list-group-item">
+                    Streamline regulatory compliance processes, saving time and resources.
+                  </li>
+                  <li className="list-group-item">
+                    Improve data quality and integrity, ensuring regulatory adherence.
+                  </li>
+                  <li className="list-group-item">
+                    Enhance collaboration and communication across teams and geographies.
+                  </li>
+
+                  <li className="list-group-item">
+                    Accelerate research and development timelines, bringing life-saving innovations to market faster.
+                  </li>
+                  <li className="list-group-item">
+                    Gain invaluable insights from data to optimize operations and decision-making.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+              <div className="abouts">
+                <img className="img-fluid" src="/System.jpeg" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="container-fluid section2 py-5">
+        <div className="container">
+          <div className="row g-5 align-items-center">
+            <div className="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+              <div className="abouts">
+                <img className="img-fluid" src="/medicine.jpeg" />
+              </div>
+            </div>
+
+            <div className="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+              <div className="paragraph_container">
+                <p className="paragraph">
+                  Ultimately, at Lifelink Digital, we believe in the power of technology to transform the pharmaceutical industry and improve the lives of patients everywhere.
+                </p>
+              </div>
+              <h3 className="mb-4">
+                {" "}
+                <h3 className="mb-4">This mission statement reflects our commitment to:</h3>
+              </h3>
+              <div className="content_container">
+                <ul className="list-group" ref={(ref) => listRefs.current.push(ref)}>
+                  <li className="list-group-item">
+                    Being a leader in GxP software solutions.
+                  </li>
+                  <li className="list-group-item">
+                    Using AI to achieve true Industry 4.0
+                  </li>
+                  <li className="list-group-item">
+                    Turning data into wisdom
+                  </li>
+
+                  <li className="list-group-item">
+                    Making a positive impact on the world.
+                  </li>
+                  <li className="list-group-item">
+                    Building a culture of innovation, collaboration, and excellence.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
