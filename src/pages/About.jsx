@@ -5,19 +5,19 @@ import BreadCrumb from "../components/BreadCrumb";
 // import { faFacebookF, faInstagram, faLinkedinIn, faTwitter } from "@fortawesome/free-brands-svg-icons";
 
 function About() {
-const listRefs = useRef([]);
+  const listRefs = useRef([]);
 
   useEffect(() => {
-      if (listRefs.current) {
-        
-      }
+    if (listRefs.current) {
+    }
     const observers = [];
 
     listRefs.current.forEach((listRef) => {
       const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            const listItems = listRef.current.querySelectorAll(".list-group-item");
+            const listItems =
+              listRef.current.querySelectorAll(".list-group-item");
             listItems.forEach((item) => {
               item.classList.add("list-item-animation");
             });
@@ -30,7 +30,6 @@ const listRefs = useRef([]);
         observer.observe(listRef.current);
       }
       observers.push(observer);
-    
     });
 
     return () => {
@@ -43,53 +42,77 @@ const listRefs = useRef([]);
       <BreadCrumb page="About Us" />
 
       {/* <!-- About Start --> */}
-      <div className="container-fluid section2  py-5">
+
+      <div className="container-fluid   py-3">
+        <div className="container py-4">
+          <div className="row g-2 align-items-center">
+            <div className="col-lg-12 wow fadeIn" data-wow-delay="0.5s">
+              <h3 className=" text-center fs-2 pt-3">
+                Lifelink Digital: Streamlining GxP Compliance for Global Pharma
+              </h3>
+              <div className="paragraph_container ">
+                <p className="paragraph fs-5 pt-2">
+                  Lifelink Digital is a leading global provider of GxP software
+                  solutions, empowering pharmaceutical and life sciences
+                  companies to achieve and maintain compliance efficiently. With
+                  a deep understanding of GxP regulations and industry best
+                  practices, we offer a comprehensive suite of software
+                  solutions designed to streamline:
+                </p>
+              </div>
+              <p className="mb-4"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="container-fluid section2 py-5">
         <div className="container">
           <div className="row g-5 align-items-center">
             <div className="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
               <div className="abouts">
-                <img className="img-fluid" src="/about3.jpg" />
+                <img className="img-fluid" src="/abouts.jpg" />
               </div>
             </div>
             <div className="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-              {/* <div className="btn btn-sm border rounded-pill text-primary px-3 mb-3">About Us</div> */}
-              <h3 className="mb-4">Lifelink Digital: Streamlining GxP Compliance for Global Pharma</h3>
-              <div className="paragraph_container ">
-                <p className="paragraph">
-                  Lifelink Digital is a leading global provider of GxP software solutions, empowering pharmaceutical and
-                  life sciences companies to achieve and maintain compliance efficiently. With a deep understanding of
-                  GxP regulations and industry best practices, we offer a comprehensive suite of software solutions
-                  designed to streamline:
-                </p>
-              </div>
+             
               <p className="mb-4"></p>
               <div className="content_container">
-                <ul className="list-group" ref={(ref) => listRefs.current.push(ref)}>
+                <ul
+                  className="list-group"
+                  ref={(ref) => listRefs.current.push(ref)}
+                >
                   <li className="list-group-item">
                     <b> AI-driven insights: </b>
-                    Leverage artificial intelligence to analyze pharmaceutical data, predict trends, and optimize
-                    decision-making processes, enhancing efficiency and innovation in drug development and patient care.
+                    Leverage artificial intelligence to analyze pharmaceutical
+                    data, predict trends, and optimize decision-making
+                    processes, enhancing efficiency and innovation in drug
+                    development and patient care.
                   </li>
                   <li className="list-group-item">
                     <b>Data integrity and quality management</b>
-                    Ensure data accuracy and traceability across your entire workflow with our data management
-                    solutions.
+                    Ensure data accuracy and traceability across your entire
+                    workflow with our data management solutions.
                   </li>
                   <li className="list-group-item">
-                    <b> Document management and control: </b>Simplify document creation, review, approval, and version
-                    control with our intuitive document management system.
+                    <b> Document management and control: </b>Simplify document
+                    creation, review, approval, and version control with our
+                    intuitive document management system.
                   </li>
                   <li className="list-group-item">
-                    <b> Regulatory compliance: </b> Stay ahead of regulatory changes with our automated solutions for
-                    risk management, audit trails, and electronic signatures.
+                    <b> Regulatory compliance: </b> Stay ahead of regulatory
+                    changes with our automated solutions for risk management,
+                    audit trails, and electronic signatures.
                   </li>
                   <li className="list-group-item">
-                    <b> Quality management systems: </b>Implement and manage your QMS effectively with our integrated
-                    quality management software.
+                    <b> Quality management systems: </b>Implement and manage
+                    your QMS effectively with our integrated quality management
+                    software.
                   </li>
                   <li className="list-group-item">
-                    <b> Collaboration and communication: </b>Foster seamless collaboration across teams and departments
-                    with our secure communication and workflow management tools.
+                    <b> Collaboration and communication: </b>Foster seamless
+                    collaboration across teams and departments with our secure
+                    communication and workflow management tools.
                   </li>
                 </ul>
               </div>
@@ -103,33 +126,43 @@ const listRefs = useRef([]);
           <div className="row g-5 align-items-center">
             <div className="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
               {/* <div className="btn btn-sm border rounded-pill text-primary px-3 mb-3">About Us</div> */}
-              <h3 className="mb-4">By partnering with Lifelink Digital, you can:</h3>
+              <h3 className="mb-4">
+                By partnering with Lifelink Digital, you can:
+              </h3>
               <div className="content_container">
-                <ul className="list-group" ref={(ref) => listRefs.current.push(ref)}>
+                <ul
+                  className="list-group"
+                  ref={(ref) => listRefs.current.push(ref)}
+                >
                   <li className="list-group-item">
                     <b> Reduce costs and improve efficiency </b>
-                    Eliminate manual processes and centralize data management for significant cost savings and increased
-                    operational efficiency.
+                    Eliminate manual processes and centralize data management
+                    for significant cost savings and increased operational
+                    efficiency.
                   </li>
                   <li className="list-group-item">
-                    <b> Minimize risk and ensure compliance: </b>Mitigate regulatory risks and ensure consistent
-                    compliance with our validated and configurable software solutions.
+                    <b> Minimize risk and ensure compliance: </b>Mitigate
+                    regulatory risks and ensure consistent compliance with our
+                    validated and configurable software solutions.
                   </li>
                   <li className="list-group-item">
-                    <b> Improve data quality and visibility: </b> Gain complete visibility into your data and processes
-                    for better decision-making and improved data integrity.
+                    <b> Improve data quality and visibility: </b> Gain complete
+                    visibility into your data and processes for better
+                    decision-making and improved data integrity.
                   </li>
                   <li className="list-group-item">
-                    <b> Scale with confidence: </b>Our flexible and scalable solutions adapt to your evolving needs as
-                    your business grows.
+                    <b> Scale with confidence: </b>Our flexible and scalable
+                    solutions adapt to your evolving needs as your business
+                    grows.
                   </li>
                 </ul>
               </div>
 
               <div className="ps_paragraph_container mt-2 bg">
                 <h5 className="ps_paragraph">
-                  Contact Lifelink Digital today to discover how our GxP software solutions can help you achieve your
-                  compliance and quality goals
+                  Contact Lifelink Digital today to discover how our GxP
+                  software solutions can help you achieve your compliance and
+                  quality goals
                 </h5>
               </div>
             </div>
@@ -147,8 +180,8 @@ const listRefs = useRef([]);
       <div className="container-fluid section2 py-5">
         <div className="container">
           <div className="row g-5 align-items-center">
-            <div className="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-              <div className="abouts">
+            <div className="col-lg-6 wow fadeIn " data-wow-delay="0.1s">
+              <div className="aboutsimg">
                 <img className="img-fluid" src="/about5.jpg" />
               </div>
             </div>
@@ -158,40 +191,53 @@ const listRefs = useRef([]);
               <h4 className="why_line">Quality Policy</h4>
               <div className="paragraph_container">
                 <p className="paragraph">
-                  Lifelink Digital is committed to providing the highest quality GxP software and services to the global
-                  pharmaceutical industry. We are dedicated to exceeding our customers' expectations and ensuring that
-                  our products and services comply with all applicable regulatory requirements.
+                  Lifelink Digital is committed to providing the highest quality
+                  GxP software and services to the global pharmaceutical
+                  industry. We are dedicated to exceeding our customers'
+                  expectations and ensuring that our products and services
+                  comply with all applicable regulatory requirements.
                 </p>
               </div>
               <h3 className="mb-4">
                 {" "}
-                <h3 className="mb-4">By partnering with Lifelink Digital, you can:</h3>
+                <h3 className="mb-4">
+                  By partnering with Lifelink Digital, you can:
+                </h3>
               </h3>
               <div className="content_container">
-                <ul className="list-group" ref={(ref) => listRefs.current.push(ref)}>
+                <ul
+                  className="list-group"
+                  ref={(ref) => listRefs.current.push(ref)}
+                >
                   <li className="list-group-item">
-                    <b> Customer Focus: </b>We understand that our success depends on the success of our customers. We
-                    are committed to listening to their needs and exceeding their expectations.
+                    <b> Customer Focus: </b>We understand that our success
+                    depends on the success of our customers. We are committed to
+                    listening to their needs and exceeding their expectations.
                   </li>
                   <li className="list-group-item">
-                    <b> Quality by Design: </b>We build quality into our products and services from the very beginning.
-                    We use a risk-based approach to identify and mitigate potential quality problems.
+                    <b> Quality by Design: </b>We build quality into our
+                    products and services from the very beginning. We use a
+                    risk-based approach to identify and mitigate potential
+                    quality problems.
                   </li>
                   <li className="list-group-item">
-                    <b> Continuous Improvement: </b>We are committed to continually improving our products, services,
-                    and processes. We use a data-driven approach to identify areas for improvement and implement
-                    effective change.
+                    <b> Continuous Improvement: </b>We are committed to
+                    continually improving our products, services, and processes.
+                    We use a data-driven approach to identify areas for
+                    improvement and implement effective change.
                   </li>
 
                   <li className="list-group-item">
-                    <b> Regulatory Compliance: </b>We are committed to complying with all applicable GxP regulations and
-                    industry standards. We maintain a comprehensive quality management system (QMS) to ensure
-                    compliance.
+                    <b> Regulatory Compliance: </b>We are committed to complying
+                    with all applicable GxP regulations and industry standards.
+                    We maintain a comprehensive quality management system (QMS)
+                    to ensure compliance.
                   </li>
                   <li className="list-group-item">
-                    <b> Employee Engagement: </b>We believe that our employees are our most valuable asset. We empower
-                    our employees to take ownership of quality and provide them with the training and resources they
-                    need to be successful.
+                    <b> Employee Engagement: </b>We believe that our employees
+                    are our most valuable asset. We empower our employees to
+                    take ownership of quality and provide them with the training
+                    and resources they need to be successful.
                   </li>
                 </ul>
               </div>
@@ -207,34 +253,44 @@ const listRefs = useRef([]);
               {/* <div className="btn btn-sm border rounded-pill text-primary px-3 mb-3">About Us</div> */}
               <h3 className="mb-4">To achieve these goals, we will:</h3>
               <div className="content_container">
-                <ul className="list-group" ref={(ref) => listRefs.current.push(ref)}>
+                <ul
+                  className="list-group"
+                  ref={(ref) => listRefs.current.push(ref)}
+                >
                   <li className="list-group-item">
-                    Implement and maintain a documented QMS that meets the requirements of relevant GxP regulations and
-                    industry standards.
+                    Implement and maintain a documented QMS that meets the
+                    requirements of relevant GxP regulations and industry
+                    standards.
                   </li>
                   <li className="list-group-item">
-                    Conduct regular risk assessments to identify and mitigate potential quality problems.
+                    Conduct regular risk assessments to identify and mitigate
+                    potential quality problems.
                   </li>
                   <li className="list-group-item">
-                    Conduct regular training for our employees on quality principles and procedures.
+                    Conduct regular training for our employees on quality
+                    principles and procedures.
                   </li>
 
                   <li className="list-group-item">
-                    Develop and implement quality control procedures for all of our products and services.
+                    Develop and implement quality control procedures for all of
+                    our products and services.
                   </li>
                   <li className="list-group-item">
-                    Conduct regular training for our employees on quality principles and procedures.
+                    Conduct regular training for our employees on quality
+                    principles and procedures.
                   </li>
                   <li className="list-group-item">
-                    Continuously review and update our quality policy to ensure that it remains relevant and effective.
+                    Continuously review and update our quality policy to ensure
+                    that it remains relevant and effective.
                   </li>
                 </ul>
               </div>
               <div className="ps_paragraph_container mt-2 bg">
                 <h5 className="ps_paragraph">
-                  We are committed to providing our customers with the highest quality products and services possible.
-                  We believe that our quality policy is a key factor in our success and we are committed to its
-                  continuous improvement.
+                  We are committed to providing our customers with the highest
+                  quality products and services possible. We believe that our
+                  quality policy is a key factor in our success and we are
+                  committed to its continuous improvement.
                 </h5>
               </div>
             </div>
