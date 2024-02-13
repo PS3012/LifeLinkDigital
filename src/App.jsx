@@ -29,8 +29,20 @@ import IntelligentPharma from "./pages/services/IntelligentPharma";
 import GxpTrainig from "./pages/services/GxpTraining";
 import Rpa from "./pages/services/Rpa";
 import Industries from "./pages/Industries";
+import { useEffect } from "react";
 
 function App() {
+      useEffect(() => {
+        const preventRightClick = (e) => {
+          e.preventDefault();
+        };
+
+        document.addEventListener("contextmenu", preventRightClick);
+
+        return () => {
+          document.removeEventListener("contextmenu", preventRightClick);
+        };
+      }, []);
   return (
     <>
       <BrowserRouter>
