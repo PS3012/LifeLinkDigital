@@ -19,7 +19,7 @@ export default function PaperlessM() {
           <div className="row g-5 align-items-center">
             <div className="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
               <div className="abouts">
-                <img className="img-fluid" src="/industriesPublic.jpeg" />
+                <img className="img-fluid" src="/IMG11.jpg" />
               </div>
             </div>
             <div className="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
