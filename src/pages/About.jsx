@@ -1,13 +1,8 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, } from "react";
 import BreadCrumb from "../components/BreadCrumb";
-import { useInView } from "react-intersection-observer";
-import VisibilitySensor from "react-visibility-sensor";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faCheck, faUsers } from "@fortawesome/free-solid-svg-icons";
-// import { faFacebookF, faInstagram, faLinkedinIn, faTwitter } from "@fortawesome/free-brands-svg-icons";
 
 function About() {
   const listRefs = useRef([]);
@@ -19,6 +14,7 @@ function About() {
 
   useEffect(() => {
     if (listRefs.current) {
+      ""
     }
     const observers = [];
 
@@ -119,7 +115,6 @@ function About() {
         <div className="container">
           <div className="row g-5 align-items-center">
             <div className="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-              {/* <div className="btn btn-sm border rounded-pill text-primary px-3 mb-3">About Us</div> */}
               <h3 className="mb-4" data-aos="fade-right">
                 By partnering with Lifelink Digital, you can:
               </h3>
@@ -192,7 +187,6 @@ function About() {
             </div>
 
             <div className="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-              {/* <div className="btn btn-sm border rounded-pill text-primary px-3 mb-3">About Us</div> */}
               <h4 className="why_line" data-aos="fade-left">
                 Quality Policy
               </h4>
@@ -205,11 +199,9 @@ function About() {
                   comply with all applicable regulatory requirements.
                 </p>
               </div>
-              <h3 className="mb-4">
-                {" "}
-                <h3 className="mb-4" data-aos="fade-left">
-                  By partnering with Lifelink Digital, you can:
-                </h3>
+              {" "}
+              <h3 className="mb-4" data-aos="fade-left">
+                By partnering with Lifelink Digital, you can:
               </h3>
               <div className="content_container">
                 <ul
@@ -296,8 +288,7 @@ function About() {
               </div>
               <div
                 className="ps_paragraph_container mt-2 bg"
-                data-aos="fade-right"
-              >
+                data-aos="fade-right">
                 <h5 className="ps_paragraph">
                   We are committed to providing our customers with the highest
                   quality products and services possible. We believe that our
@@ -334,7 +325,6 @@ function About() {
             </div>
 
             <div className="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-              {/* <div className="btn btn-sm border rounded-pill text-primary px-3 mb-3">About Us</div> */}
               <h4 className="why_line" data-aos="fade-left">
                 Mission Statement
               </h4>
@@ -347,8 +337,7 @@ function About() {
                 </p>
               </div>
               <h3 className="mb-4" data-aos="fade-left">
-                {" "}
-                <h3 className="mb-4">Through our relentless dedication to:</h3>
+                Through our relentless dedication to:
               </h3>
               <div className="content_container">
                 <ul
@@ -469,9 +458,7 @@ function About() {
               </div>
               <h3 className="mb-4" data-aos="fade-left">
                 {" "}
-                <h3 className="mb-4">
                   This mission statement reflects our commitment to:
-                </h3>
               </h3>
               <div className="content_container">
                 <ul

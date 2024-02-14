@@ -6,19 +6,10 @@ import { Accordion } from "react-bootstrap";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faFacebookF,
-  faInstagram,
-  faLinkedinIn,
-  faTwitter,
+  faFacebookF, faInstagram, faLinkedinIn, faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import {
-  faArrowRight,
-  faBrain,
-  faCheck,
-  faGraduationCap,
-  faPowerOff,
-  faRobot,
-  faUsers,
+  faArrowRight, faBrain, faCheck, faGraduationCap, faPowerOff, faRobot, faUsers,
 } from "@fortawesome/free-solid-svg-icons";
 import MySlider from "../components/MySlider";
 import { useNavigate } from "react-router-dom";
@@ -38,15 +29,10 @@ function Home() {
       <div className="slider-container">
         <MySlider />
       </div>
-
       <div className="container-fluid pt-5 section2 hero-header mb-5 mt-4">
         <div className="container">
           <div className="row g-5 align-items-center">
-            <div
-              className="col-lg-6 wow fadeIn"
-              data-wow-delay="0.1s"
-              data-aos="fade-right"
-            >
+            <div className="col-lg-6 wow fadeIn" data-wow-delay="0.1s" data-aos="fade-right">
               <div className="about-img">
                 <img className="img-fluid" src="/about-img.jpg" />
               </div>
