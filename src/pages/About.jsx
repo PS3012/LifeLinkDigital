@@ -48,6 +48,30 @@ function About() {
       <BreadCrumb page="About Us" />
 
       {/* <!-- About Start --> */}
+
+      <div className="container-fluid   py-3">
+        <div className="container py-4">
+          <div className="row g-2 align-items-center">
+            <div className="col-lg-12 wow fadeIn" data-wow-delay="0.5s">
+              <h3 className=" text-center fs-2 pt-3">
+                Lifelink Digital: Streamlining GxP Compliance for Global Pharma
+              </h3>
+              <div className="paragraph_container ">
+                <p className="paragraph fs-5 pt-2">
+                  Lifelink Digital is a leading global provider of GxP software
+                  solutions, empowering pharmaceutical and life sciences
+                  companies to achieve and maintain compliance efficiently. With
+                  a deep understanding of GxP regulations and industry best
+                  practices, we offer a comprehensive suite of software
+                  solutions designed to streamline:
+                </p>
+              </div>
+              <p className="mb-4"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
       <div className="container-fluid section2  py-5">
         <div className="container">
           <div className="row g-5 align-items-center">
